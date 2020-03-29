@@ -10,9 +10,11 @@
 |city|string|null: false|
 |city_adress|string|null: false|
 |email|string|null: false|
-|password|string|null: false|
+|birthday|data|null: false|
+|first_name_kana|string|null: false|
+|last_name_kana|string|null: false|
 ### Association
-- has_many :rewards
+- has_many :facilitys
 - has_many :qacomments
 - has_many :reviews
 
