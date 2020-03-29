@@ -46,7 +46,6 @@
 ## qacommentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-
 |text|text|null: false|
 |user_id|references|null: false, foreign_key: true|
 |animal_id|references|null: false, foreign_key: true|
