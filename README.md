@@ -6,7 +6,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|phone number|integer|limit: 11
+|phone number|integer|null: false
 |city|string|null: false|
 |city_adress|string|null: false|
 |email|string|null: false|
