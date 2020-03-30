@@ -21,11 +21,8 @@
               = f.label :"お名前カナ(全角)"
               .hissu
                 必須    
-            .single-main-user-form-fullname
-              .field-inputs
-                = f.text_field :first_name_kana,placeholder: "例）タナカ"
-              .field-inputs
-                = f.text_field :last_name_kana,placeholder: "例）タロウ"
+            .field-input
+              = f.text_field :name_kana,placeholder: "例）タナカ タロウ"
           .field
             .field-label
               = f.label :メールアドレス
