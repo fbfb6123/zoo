@@ -1,0 +1,4 @@
+= form_for @facility do |f|
+  = f.text_field :name,placeholder: '例）東京施設'
+  = f.collection_select(:prefecture_id, Prefecture.all, :id, :name, prompt: "---", class: "form")
+  = f.submit "登録する"
