@@ -39,7 +39,7 @@
 |image2|string
 |image3|string
 |buyer_id|references|foreign_key: { to_table: :users }|
-|facility_id|integer|null: false, foreign_key: true|
+|facility_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
