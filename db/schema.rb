@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_03_083151) do
+ActiveRecord::Schema.define(version: 2020_04_03_092146) do
+
+  create_table "animals", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "type", null: false
+    t.string "gender", null: false
+    t.string "age", null: false
+    t.string "image1", null: false
+    t.string "image2"
+    t.string "image3"
+    t.bigint "buyer_id"
+    t.bigint "facility_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["buyer_id"], name: "index_animals_on_buyer_id"
+    t.index ["facility_id"], name: "index_animals_on_facility_id"
+  end
 
   create_table "facilities", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -47,5 +63,7 @@ ActiveRecord::Schema.define(version: 2020_04_03_083151) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "animals", "facilities"
+  add_foreign_key "animals", "users", column: "buyer_id"
   add_foreign_key "facilities", "prefectures"
 end
