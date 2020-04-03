@@ -262,12 +262,11 @@
         }
     }
     .main_chat{
-    background-color: #7e6b6b;
+    background-color: #9c8888;
     height:100%;
     width: 100%;
     padding: 20px 40px;
       &__box{
-      background-color: #ddd;
       
       text-align: center;
       font-size: 30px;
@@ -282,14 +281,14 @@
         }
         .main_chat__box__item-users{
         padding-top: 40px;
-        width: 400px;
+        width: 440px;
         }
       .main_chat__item-edit{
-      height:30px;
+      height:40px;
       width: 200px;
-      background-color: #ec7a7a;
+      background-color: #e9dcdca2;
       text-align: center;
-      line-height: 30px;
+      line-height: 40px;
       border-radius: 10px;
       }
     }
