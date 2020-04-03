@@ -76,12 +76,6 @@
                 = f.date_select :birthday, use_month_numbers: true,start_year: 1930, end_year: (Time.now.year - 10),include_blank: true
             .single-main-user-form-verification__contents-list
               ※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。
-            .single-main-user-form-verification__content-terms
-              「次へ進む」のボタンを押すことにより、
-              = link_to "#",class:"btn" do
-                利用規約
-              .plas
-                に同意したものとみなします
           .actions
             = f.submit "登録する", class: 'btn'
           .single-main-user-form-verification-me
@@ -93,7 +87,4 @@
           プライバシーポリシー
       %li.footer-list
         =link_to "#",class:"a" do
-          フリマ利用規約
-      %li.footer-list
-        =link_to "#", class: "a" do
-          特定商取引に関する表記
+          利用規約
