@@ -4,5 +4,32 @@
     
 
     .main_chat
-      .main_chat__item
-        ここに部分テンプレート
+      .main_chat__box
+        ユーザー情報
+      .main_chat__box__item
+        .main_chat__box__item-user 
+          .main_chat__box__item-users
+            名前(全角)：
+            = current_user.name
+          .main_chat__box__item-users
+            名前カナ(全角)：
+            = current_user.name_kana
+          .main_chat__box__item-users
+            メールアドレス：
+            = current_user.email
+          .main_chat__box__item-users
+            住所：
+            = current_user.city
+          .main_chat__box__item-users
+            番地・号室：
+            = current_user.city_adress
+          .main_chat__box__item-users
+            電話番号：
+            = current_user.phone_number
+          .main_chat__box__item-users
+            生年月日：
+            = current_user.birthday
+
+      .main_chat__item-edit
+        =link_to "#" do
+          ユーザー情報を編集
