@@ -67,3 +67,4 @@
 - belongs_to :user
 
 ## test
+maypage
