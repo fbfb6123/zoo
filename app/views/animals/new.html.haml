@@ -1,9 +1,10 @@
 = form_for [@facility,@animal] do |f|
   = f.text_field :name,placeholder: 'ポチ'
   = f.text_field :type,placeholder: 'ダックスフンド'
+  = f.select :species, [["犬",0],["猫",1]], prompt: "種類を選択してください"
   = f.select :gender, [["男",0],["女",1]], prompt: "性別を選択してください"
   = f.text_field :age,placeholder: '5才'
-  = f.file_field :image1, placeholder: "Image Url1"
-  = f.file_field :image2, placeholder: "Image Url2"
-  = f.file_field :image3, placeholder: "Image Url3"
+  = f.text_field :image1, placeholder: "Image Url1"
+  = f.text_field :image2, placeholder: "Image Url2"
+  = f.text_field :image3, placeholder: "Image Url3"
   = f.submit "登録する"
