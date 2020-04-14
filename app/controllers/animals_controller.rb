@@ -2,6 +2,9 @@ class AnimalsController < ApplicationController
   def index
   end
 
+  def show
+  end
+
   def new
     @facility = Facility.find(params[:facility_id])
     @animal = Animal.new
