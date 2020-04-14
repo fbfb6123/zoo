@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :edit, :update]
   resources :facilities, only: [:index,:new,:create,:show, :edit, :update] do
-    resources :animals, only: [:index,:new,:create,:show, :edit, :update]
+    resources :animals, only: [:index,:new,:create,:edit, :update]
   end
+  resources :animals, only: [:show]
 end
