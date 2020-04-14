@@ -1,0 +1,78 @@
+.dogmain
+  .dogmain__first
+    .dogmain__first--name
+      dog一覧
+    .dogmain__first--contents
+      - @dog.each_slice(4) do |dog1,dog2,dog3,dog4|
+        .dogmains
+          .dogmains-content
+            = link_to "#" do
+              .first_image
+                = image_tag dog1.image1,height: '130px', width: '180px'
+              .first_name
+                名前：
+                = dog1.name
+              .first_area
+                場所：
+                - facility = Facility.find_by(id: dog1.facility_id)
+                = facility.name
+              .first_gender
+                性別：
+                -if dog1.gender == '0'
+                  男
+                -else
+                  女
+          -if dog2.present?
+            .dogmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog2.image1,height: '130px', width: '180px'
+                .first_name
+                  名前：
+                  = dog2.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: dog2.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if dog2.gender == '0'
+                    男
+                  -else
+                    女
+          -if dog3.present?
+            .dogmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog3.image1,height: '130px', width: '180px'
+                .first_name
+                  名前：
+                  = dog3.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: dog3.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if dog3.gender == '0'
+                    男
+                  -else
+                    女
+          -if dog4.present?
+            .dogmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog4.image1,height: '130px', width: '180px'
+                .first_name
+                  名前：
+                  = dog4.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: dog4.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if dog4.gender == '0'
+                    男
+                  -else
+                    女

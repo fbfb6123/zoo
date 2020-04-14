@@ -42,8 +42,8 @@
     .main__second--name
       new zoo
     .main__second--contents
-      .main__second--contents-content
-        - @animal.each do |animal|
+      - @animal.each do |animal|
+        .main__second--contents-content
           = link_to "#" do
             .second_image
               = image_tag animal.image1,height: '130px', width: '180px'
@@ -64,8 +64,8 @@
     .main__third--name
       dog
     .main__third--contents
-      .main__third--contents-content
-        - @dog.each do |dog|
+      - @dog.each do |dog|
+        .main__third--contents-content
           = link_to "#" do
             .third_image
               = image_tag dog.image1,height: '130px', width: '180px'
@@ -86,8 +86,8 @@
     .main__fourth--name
       cat
     .main__fourth--contents
-      .main__fourth--contents-content
-        - @cat.each do |cat|
+      - @cat.each do |cat|
+        .main__fourth--contents-content
           = link_to "#" do
             .fourth_image
               = image_tag cat.image1,height: '130px', width: '180px'
