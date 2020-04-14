@@ -1,0 +1,40 @@
+=render 'shared/header'
+.animals_main
+  .animals_main-image
+  .animals_main-box
+    .table
+      %table
+        %tr
+          %th.name 名前
+          %td 
+            ぽち
+        %tr
+          %th.condition 性別
+          %td 
+            ♂
+        %tr
+          %th.brand 種類
+          %td 
+            柴犬
+        %tr
+          %th.brand 歳
+          %td 
+            3歳
+        %tr
+          %th.condition 施設名
+          %td 
+            宮崎県延岡市
+        %tr
+          %th.category 説明
+          %td.category-list
+            とても人懐っこく吠えないため飼いやすくていい子です。トイレも教えればすぐに覚えてくれると思います。気になる方がいれば下記の応募ボタンよりご連絡お待ちしております。
+
+  .animals_main-btn  
+    .animals_main-btn__form
+      = form_for "#" do |f|  
+        = f.submit "応募する", class: 'animals_main-btn__form__submit'
+
+
+
+
+=render 'shared/fotter'
