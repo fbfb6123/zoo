@@ -31,6 +31,7 @@
 ## animalsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|species|string|null: false|
 |name|string|null: false|
 |type|string|null: false|
 |gender|string|null: false|
