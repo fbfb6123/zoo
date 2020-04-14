@@ -76,3 +76,5 @@
                     男
                   -else
                     女
+  .catmain__second
+    = will_paginate @cat, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'

@@ -1,5 +1,5 @@
 class CatsController < ApplicationController
   def index
-    @cat = Animal.where(species:1).order('id DESC')
+    @cat = Animal.where(species:1).paginate(page: params[:page], per_page: 4)
   end
 end
