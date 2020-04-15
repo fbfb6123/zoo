@@ -137,12 +137,20 @@
     &--contents{
       display: flex;
       justify-content: center;
+      
       &-content{
-        background-color: white;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 209, 216);
         margin: 0 30px;
-        .second_image{
-          height: 130px;
-          background-color:blue;
+        padding: 10px;
+        &-line{
+          background-color: white;
+          width: 200px;
+          .second_image{
+            height: 130px;
+            width: 200px;
+          }
         }
       }
     }
@@ -159,11 +167,18 @@
       display: flex;
       justify-content: center;
       &-content{
-        background-color: white;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(247, 247, 177);
         margin: 0 30px;
-        .third_image{
-          height: 130px;
-          background-color:blue;
+        padding: 10px;
+        &-line{
+          background-color: white;
+          width: 200px;
+          .third_image{
+            height: 130px;
+            width: 200px;
+          }
         }
       }
     }
@@ -180,11 +195,18 @@
       display: flex;
       justify-content: center;
       &-content{
-        background-color: white;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(186, 252, 173);
         margin: 0 30px;
-        .fourth_image{
-          height: 130px;
-          background-color:blue;
+        padding: 10px;
+        &-line{
+          background-color: white;
+          width: 200px;
+          .fourth_image{
+            height: 130px;
+            width: 200px;
+          }
         }
       }
     }
