@@ -1,10 +1,35 @@
+=render 'shared/header'
 .mainarea
+  .mainarea__title
+    エリアから探す
+  .mainarea__seachs
+    = search_form_for @q,as: :q, url:areas_path do |f|
+      .mainarea__seachs--prefecture
+        = f.collection_select :prefecture_id_eq, @areaies, :id, :name, :include_blank => '指定なし'
+        = f.submit "検索",id:"btn"
+    .mainarea__prefecture
+      - if @checks.present?
+        - @areaes.each do |area|
+          = link_to "#",class:"area" do
+            = area.name
+  .mainarea__title
+    施設名で検索する  
   .mainarea__seach
     = search_form_for @p,as: :p, url:areas_path do |f|
-      = f.search_field :name_cont, class: 'group__seach-box'
-      = f.submit
-  .mainarea__list
-    - if @check.present?
-      - @categories.each do |categories|
-        = link_to "#",class:"group__seach-list-btn" do
-          = categories.name
+      .mainarea__seachs--prefecture
+        = f.search_field :name_cont,placeholder: '施設名',class: 'group__seach-box'
+        = f.submit "検索" 
+    .mainarea__list
+      - if @check.present?
+        - @areas.each do |area|
+          = link_to "#",class:"area" do
+            = area.name
+  .mainarea__lists
+    .mainarea__lists--title
+      全ての施設一覧
+    .mainarea__lists--titles
+      - @facility.each do |facility|
+        .mainarea__lists--title--name
+          =link_to "#",class:"area" do
+            = facility.name
+=render 'shared/fotter'
