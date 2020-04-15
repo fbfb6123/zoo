@@ -1,6 +1,7 @@
 .header
   .header__left
     =link_to root_path do
+      = image_tag 'header.png', height: '60', width: '80', class: 'image1'
       ZOO
   .header__right
     -if user_signed_in? 
@@ -44,7 +45,7 @@
     .main__second--contents
       - @animal.each do |animal|
         .main__second--contents-content
-          = link_to "#" do
+          = link_to animal_path(animal) do
             .second_image
               = image_tag animal.image1,height: '130px', width: '180px'
             .second_name
@@ -66,7 +67,7 @@
     .main__third--contents
       - @dog.each do |dog|
         .main__third--contents-content
-          = link_to "#" do
+          = link_to animal_path(dog) do
             .third_image
               = image_tag dog.image1,height: '130px', width: '180px'
             .third_name
@@ -88,7 +89,7 @@
     .main__fourth--contents
       - @cat.each do |cat|
         .main__fourth--contents-content
-          = link_to "#" do
+          = link_to animal_path(cat) do
             .fourth_image
               = image_tag cat.image1,height: '130px', width: '180px'
             .fourth_name
@@ -158,7 +159,5 @@
           こんなに大きくなりました
         .sixth_image
           画像
-.footer
-  =link_to "#" do
-    ZOO
+=render 'shared/fotter'
  

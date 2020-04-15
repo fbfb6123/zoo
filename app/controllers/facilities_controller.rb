@@ -16,6 +16,9 @@ class FacilitiesController < ApplicationController
     end
   end
 
+  def show
+  end
+
   private
 
   def facility_params

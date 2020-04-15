@@ -10,7 +10,7 @@
     .mainarea__prefecture
       - if @checks.present?
         - @areaes.each do |area|
-          = link_to "#",class:"area" do
+          = link_to facility_path(area),class:"area" do
             = area.name
   .mainarea__title
     施設名で検索する  
@@ -22,7 +22,7 @@
     .mainarea__list
       - if @check.present?
         - @areas.each do |area|
-          = link_to "#",class:"area" do
+          = link_to facility_path(area),class:"area" do
             = area.name
   .mainarea__lists
     .mainarea__lists--title
@@ -30,6 +30,6 @@
     .mainarea__lists--titles
       - @facility.each do |facility|
         .mainarea__lists--title--name
-          =link_to "#",class:"area" do
+          =link_to facility_path(facility),class:"area" do
             = facility.name
 =render 'shared/fotter'
