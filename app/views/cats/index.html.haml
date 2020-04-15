@@ -1,12 +1,13 @@
+=render 'shared/header'
 .catmain
   .catmain__first
     .catmain__first--name
       cat一覧
     .catmain__first--contents
-      - @cat.each_slice(4) do |cat1,cat2,cat3,cat4|
+      - @cat.each_slice(5) do |cat1,cat2,cat3,cat4,cat5|
         .catmains
           .catmains-content
-            = link_to "#" do
+            = link_to animal_path(cat1) do
               .first_image
                 = image_tag cat1.image1,height: '130px', width: '180px'
               .first_name
@@ -24,7 +25,7 @@
                   女
           -if cat2.present?
             .catmains-content
-              = link_to "#" do
+              = link_to animal_path(cat2) do
                 .first_image
                   = image_tag cat2.image1,height: '130px', width: '180px'
                 .first_name
@@ -42,7 +43,7 @@
                     女
           -if cat3.present?
             .catmains-content
-              = link_to "#" do
+              = link_to animal_path(cat3) do
                 .first_image
                   = image_tag cat3.image1,height: '130px', width: '180px'
                 .first_name
@@ -60,7 +61,7 @@
                     女
           -if cat4.present?
             .catmains-content
-              = link_to "#" do
+              = link_to animal_path(cat4) do
                 .first_image
                   = image_tag cat4.image1,height: '130px', width: '180px'
                 .first_name
@@ -76,5 +77,24 @@
                     男
                   -else
                     女
+          -if cat5.present?
+            .catmains-content
+              = link_to animal_path(cat5) do
+                .first_image
+                  = image_tag cat5.image1,height: '130px', width: '180px'
+                .first_name
+                  名前：
+                  = cat5.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: cat5.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if cat5.gender == '0'
+                    男
+                  -else
+                    女
   .catmain__second
     = will_paginate @cat, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
+=render 'shared/fotter'
