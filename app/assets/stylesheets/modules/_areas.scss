@@ -1,0 +1,83 @@
+.mainarea{
+  height: 70vh;
+  width: 100%;
+  background-image: url(/assets/sky1.jpg);
+  text-align: center;
+  &__title{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  &__seachs{
+    font-size: 20px;
+    height: 30px;
+    padding-bottom:65px;
+    #q_prefecture_id_eq{
+      height: 30px;
+    }
+    input{
+      height: 30px;
+      width: 50px;
+      background-color:white;
+      border-radius:12px;
+    }
+    .mainarea__prefecture{
+      padding-top: 10px;
+      height: 35px;
+      width: 500px;
+      margin: 0 auto;
+      overflow-x: scroll;
+      padding-bottom: 10px;
+    }
+  }
+  &__seach{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    #p_name_cont{
+      height: 30px;
+      width: 180px;
+      border-radius:2px;
+    }
+    input{
+      height: 30px;
+      width: 50px;
+      background-color:white;
+      border-radius:12px;
+      font-weight: normal;
+    }
+    .mainarea__list{
+      padding-top: 10px;
+      height: 35px;
+      width: 500px;
+      margin: 0 auto;
+      overflow-x: scroll;
+      padding-bottom: 20px;
+    }
+  }
+  &__lists{
+    &--title{
+      font-size: 20px;
+      padding-top: 15px ;
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+    &--titles{
+      margin: 0 auto;
+      overflow: scroll;
+      height: 150px;
+      width: 500px;
+      background-color: white;
+      &--name{
+        font-weight: normal;
+      }
+    }
+  }
+  a.area{
+    color: rgb(191, 105, 248);
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
