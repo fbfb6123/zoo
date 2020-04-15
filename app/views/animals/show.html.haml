@@ -31,8 +31,8 @@
 
   .animals_main-btn  
     .animals_main-btn__form
-      = form_for "#" do |f|  
-        = f.submit "応募する", class: 'animals_main-btn__form__submit'
+      .animals_main-btn__form__submit
+        = link_to "応募する", root_path, class: 'btn btn-default'
 
 
 

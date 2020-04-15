@@ -110,6 +110,19 @@ width: 100vw;
       margin-left: 450px;
       border-radius: 10px;
       width: 120px;
+      height: 60px;
+      background-color: #e4d9d9;
+      text-align: center;
+      line-height: 60px;
+      position: relative;
+        .btn{
+        color: #181717;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
       }
   }
 }
