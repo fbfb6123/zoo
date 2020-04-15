@@ -1,6 +1,6 @@
 .header
   .header__left
-    =link_to "#" do
+    =link_to root_path do
       ZOO
   .header__right
     -if user_signed_in? 
@@ -12,26 +12,26 @@
           マイページ
     -else
       .header__right--left
-        =link_to "#" do
+        =link_to new_user_session_path do
           ログイン
       .header__right--right
-        =link_to "" do
+        =link_to new_user_registration_path  do
           新規登録
 .main
   .main__first
     .main__first--area
-      = link_to "#" do
+      = link_to areas_path do
         エリアから探す
     %ul
       .main__first--zoo
         = link_to "#" do
-          NewZOO
+          動物一覧
           %li.dog
             = link_to dogs_path do
-              犬
+              Dog
           %li.cat
             = link_to cats_path do
-              猫
+              Cat
     .main__first--ivent
       = link_to "#" do
         イベント情報
@@ -40,7 +40,7 @@
         飼い主投稿一覧
   .main__second
     .main__second--name
-      new zoo
+      new animals
     .main__second--contents
       - @animal.each do |animal|
         .main__second--contents-content
