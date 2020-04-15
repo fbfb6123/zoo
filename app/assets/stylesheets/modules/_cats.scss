@@ -7,24 +7,41 @@
   background-image: url(/assets/cat.jpg);
   background-position : 50% 50%;
   background-size: cover;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   &__first{
-    padding-top:40px;
+    padding-top:20px;
     &--name{
       color: white;
       padding-top: 10px;
       font-size:30px;
       font-weight: bold;
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
     &--contents{
       .catmains{
         display: flex;
         justify-content: center;
         &-content{
-          background-color: white;
-          margin: 40px 20px;
+          background-color: rgb(186, 252, 173);
+          padding: 10px;
+          margin: 30px 20px;
+          .first_image{
+            height: 130px;
+            background-color: white;
+          }
+          .first_name{
+            width: 200px;
+            background-color: white;
+          }
+          .first_area{
+            width: 200px;
+            background-color: white;
+          }
+          .first_gender{
+            width: 200px;
+            background-color: white;
+          }
         }
       }
     }
