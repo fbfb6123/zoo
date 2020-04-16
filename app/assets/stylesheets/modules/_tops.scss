@@ -217,7 +217,6 @@
   background-position : 50% 50%;
   background-size: cover;
   &__fifth{
-
     padding-bottom: 30px;
     padding-top:40px;
     &--name{
@@ -225,18 +224,29 @@
       font-size:30px;
       text-align: center;
       padding-bottom: 20px;
-
     }
     &--contents{
       display: flex;
       justify-content: center;
+      a{
+        color: black;
+      }
       &-content{
-        background-color: white;
+        padding: 10px;
+        background-color: rgb(191, 228, 250);
         margin: 0 20px;
         .fifth_image{
           height: 130px;
           width: 300px;
           background-color:blue;
+        }
+        .fifth_name{
+          width: 300px;
+          background-color: white;
+        }
+        .fifth_area{
+          width: 300px;
+          background-color: white;
         }
       }
     }

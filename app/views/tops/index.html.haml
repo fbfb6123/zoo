@@ -113,33 +113,17 @@
     .mains__fifth--name
       Events
     .mains__fifth--contents
-      .mains__fifth--contents-content
-        .fifth_image
-          画像
-        .fifth_name
-          イベント名：
-          みんなで動物にふれ合おう
-        .fifth_area
-          場所：
-          宮崎県延岡市施設
-      .mains__fifth--contents-content
-        .fifth_image
-          画像
-        .fifth_name
-          イベント名：
-          みんなで動物にふれ合おう
-        .fifth_area
-          場所：
-          宮崎県延岡市施設
-      .mains__fifth--contents-content
-        .fifth_image
-          画像
-        .fifth_name
-          イベント名：
-          みんなで動物にふれ合おう
-        .fifth_area
-          場所：
-          宮崎県延岡市施設
+      -@event.each do |event|
+        = link_to "#" do
+          .mains__fifth--contents-content
+            .fifth_image
+              = image_tag event.image,height: '130px', width: '300px'
+            .fifth_name
+              イベント名：
+              = event.name
+            .fifth_area
+              場所：
+              = event.place
   .mains__sixth
     .mains__sixth--name
       Owner Posts

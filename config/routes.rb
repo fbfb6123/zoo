@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :dogs, only: [:index]
   resources :cats, only: [:index]
   resources :areas, only: [:index]
+  resources :dogs, only: [:index,:new,:create]
+  resources :events, only: [:index,:new,:create,:show]
   resources :facilities, only: [:index,:new,:create,:show, :edit, :update] do
     resources :animals, only: [:index,:new,:create,:edit, :update]
   end
