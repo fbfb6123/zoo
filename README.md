@@ -57,6 +57,13 @@
 - belongs_to :user
 - belongs_to :animal
 
+## eventsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text|
+|image|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+
 ## reviewsテーブル
 |Column|Type|Options|
 |------|----|-------|
