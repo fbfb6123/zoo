@@ -1,19 +1,24 @@
-= form_for @contact do |f|
-  - if @contact.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"
-      %ul
-        - @contact.errors.full_messages.each do |message|
-          %li= message
+.contact-main
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :email
-    = f.text_field :email
-  .field
-    = f.label :content
-    = f.text_area :content
-  .actions
-    = f.submit 'Save'
+  .contact-main__form
+    応募申し込み
+  = form_for @contact do |f|
+    - if @contact.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"
+        %ul
+          - @contact.errors.full_messages.each do |message|
+            %li= message
+
+    .field
+      = f.label :名前（フルネーム）
+      = f.text_field :name,class: "contact_a-btn",placeholder: "例）田中太郎"
+    .field
+      = f.label :email
+      = f.text_field :email,class: "contact_a-btn",placeholder: "PC : 携帯どちらでも可"
+    .field
+      = f.label :応募内容
+      = f.text_area :content,class: "contact_a-btn_form",placeholder: "ご希望の連絡日を第三希望までご記入ください。その他ご不明な点につきましてもあわせてご記入ください。"
+    .actions
+      = f.submit '申し込む',class: "contact_save"
+      = link_to '戻る', root_path, class: "contact_back"
