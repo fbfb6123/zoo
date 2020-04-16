@@ -1,0 +1,14 @@
+= form_for [@event] do |f|
+  = f.text_field :name,placeholder: '必須イベント名'
+  = f.text_field :place,placeholder: '必須場所'
+  = f.text_field :startmonth,placeholder: '必須開始月'
+  = f.text_field :startday,placeholder: '必須開始日'
+  = f.text_field :starttime,placeholder: '必須開始時'
+  = f.text_field :startminute,placeholder: '必須開始分'
+  = f.text_field :endmonth,placeholder: '終了月'
+  = f.text_field :endday,placeholder: '終了日'
+  = f.text_field :endtime,placeholder: '必須終了時'
+  = f.text_field :endminute,placeholder: '必須終了分'
+  = f.text_field :image, placeholder: "必須Image Url1"
+  = f.text_area :text,placeholder: '必須内容'
+  = f.submit "登録する"
