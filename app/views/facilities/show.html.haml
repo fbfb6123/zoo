@@ -1,100 +1,83 @@
 =render 'shared/header'
-.dogmain
-  -# .dogmain__first
-  -#   .dogmain__first--name
-  -#     Dog一覧
-  -#   .dogmain__first--contents
-  -#     - @dog.each_slice(5) do |dog1,dog2,dog3,dog4,dog5|
-  -#       .dogmains
-  -#         .dogmains-content
-  -#           = link_to animal_path(dog1) do
-  -#             .first_image
-  -#               = image_tag dog1.image1,height: '130px', width: '180px'
-  -#             .first_name
-  -#               名前：
-  -#               = dog1.name
-  -#             .first_area
-  -#               場所：
-  -#               - facility = Facility.find_by(id: dog1.facility_id)
-  -#               = facility.name
-  -#             .first_gender
-  -#               性別：
-  -#               -if dog1.gender == '0'
-  -#                 男
-  -#               -else
-  -#                 女
-  -#         -if dog2.present?
-  -#           .dogmains-content
-  -#             = link_to animal_path(dog2) do
-  -#               .first_image
-  -#                 = image_tag dog2.image1,height: '130px', width: '180px'
-  -#               .first_name
-  -#                 名前：
-  -#                 = dog2.name
-  -#               .first_area
-  -#                 場所：
-  -#                 - facility = Facility.find_by(id: dog2.facility_id)
-  -#                 = facility.name
-  -#               .first_gender
-  -#                 性別：
-  -#                 -if dog2.gender == '0'
-  -#                   男
-  -#                 -else
-  -#                   女
-  -#         -if dog3.present?
-  -#           .dogmains-content
-  -#             = link_to animal_path(dog3) do
-  -#               .first_image
-  -#                 = image_tag dog3.image1,height: '130px', width: '180px'
-  -#               .first_name
-  -#                 名前：
-  -#                 = dog3.name
-  -#               .first_area
-  -#                 場所：
-  -#                 - facility = Facility.find_by(id: dog3.facility_id)
-  -#                 = facility.name
-  -#               .first_gender
-  -#                 性別：
-  -#                 -if dog3.gender == '0'
-  -#                   男
-  -#                 -else
-  -#                   女
-  -#         -if dog4.present?
-  -#           .dogmains-content
-  -#             = link_to animal_path(dog4) do
-  -#               .first_image
-  -#                 = image_tag dog4.image1,height: '130px', width: '180px'
-  -#               .first_name
-  -#                 名前：
-  -#                 = dog4.name
-  -#               .first_area
-  -#                 場所：
-  -#                 - facility = Facility.find_by(id: dog4.facility_id)
-  -#                 = facility.name
-  -#               .first_gender
-  -#                 性別：
-  -#                 -if dog4.gender == '0'
-  -#                   男
-  -#                 -else
-  -#                   女
-  -#         -if dog5.present?
-  -#           .dogmains-content
-  -#             = link_to animal_path(dog5) do
-  -#               .first_image
-  -#                 = image_tag dog5.image1,height: '130px', width: '180px'
-  -#               .first_name
-  -#                 名前：
-  -#                 = dog5.name
-  -#               .first_area
-  -#                 場所：
-  -#                 - facility = Facility.find_by(id: dog5.facility_id)
-  -#                 = facility.name
-  -#               .first_gender
-  -#                 性別：
-  -#                 -if dog5.gender == '0'
-  -#                   男
-  -#                 -else
-  -#                   女
-  -# .dogmain__second
-  -#   = will_paginate @dog, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
+.animalmain
+  .animalmain__first
+    .animalmain__first--name
+      =@facility.name
+      一覧
+    .animalmain__first--contents
+      - @animal.each_slice(4) do |dog1,dog2,dog3,dog4|
+        .animalmains
+          .animalmains-content
+            = link_to animal_path(dog1) do
+              .first_image
+                = image_tag dog1.image1,height: '130px', width: '200px'
+              .first_name
+                名前：
+                = dog1.name
+              .first_area
+                場所：
+                - facility = Facility.find_by(id: dog1.facility_id)
+                = facility.name
+              .first_gender
+                性別：
+                -if dog1.gender == '0'
+                  男
+                -else
+                  女
+          -if dog2.present?
+            .animalmains-content
+              = link_to animal_path(dog2) do
+                .first_image
+                  = image_tag dog2.image1,height: '130px', width: '200px'
+                .first_name
+                  名前：
+                  = dog2.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: dog2.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if dog2.gender == '0'
+                    男
+                  -else
+                    女
+          -if dog3.present?
+            .animalmains-content
+              = link_to animal_path(dog3) do
+                .first_image
+                  = image_tag dog3.image1,height: '130px', width: '200px'
+                .first_name
+                  名前：
+                  = dog3.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: dog3.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if dog3.gender == '0'
+                    男
+                  -else
+                    女
+          -if dog4.present?
+            .animalmains-content
+              = link_to animal_path(dog4) do
+                .first_image
+                  = image_tag dog4.image1,height: '130px', width: '200px'
+                .first_name
+                  名前：
+                  = dog4.name
+                .first_area
+                  場所：
+                  - facility = Facility.find_by(id: dog4.facility_id)
+                  = facility.name
+                .first_gender
+                  性別：
+                  -if dog4.gender == '0'
+                    男
+                  -else
+                    女
+  .animalmain__second
+    = will_paginate @animal, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
 =render 'shared/fotter'
