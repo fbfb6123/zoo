@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 2020_04_15_204655) do
   end
 
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.text "content"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.text "content", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
