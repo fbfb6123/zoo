@@ -1,28 +1,10 @@
-%h1 応募ありがとうございました
+=render 'shared/header'
+.contactcomp
+  .contactcomp-main
+    .contact-main__form
+      ご応募ありがとうございました
+      %br  ご連絡を今しばらくお待ちください
+  .actions
+  = link_to 'トップページ', root_path, class: "contactcomp_back"
 
-
--# %h1 Listing contacts
-
--# %table
--#   %thead
--#     %tr
--#       %th Name
--#       %th Email
--#       %th Content
--#       %th
--#       %th
--#       %th
-
--#   %tbody
--#     - @contacts.each do |contact|
--#       %tr
--#         %td= contact.name
--#         %td= contact.email
--#         %td= contact.content
--#         %td= link_to 'Show', contact
--#         %td= link_to 'Edit', edit_contact_path(contact)
--#         %td= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }
-
--# %br
-
-= link_to 'トップページへ戻る', root_path
+=render 'shared/fotter'

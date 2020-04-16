@@ -1,7 +1,7 @@
 .contact{
 max-width: 1040px;
 width: 100%;
-height: 150vh;
+height: 100vh;
 margin:auto;
 padding: 15px 0 0;
 background-color: #d6a3a359;
@@ -56,6 +56,40 @@ display: flex;
   margin-left: 40px;
   margin-top: 50px;
   width: 130px;
+  height: 80px;
+  text-align: center;
+  display: block;
+  line-height: 80px;
+  color: #0f0f0f;
+  .a{
+  }
+}
+
+.contactcomp{
+max-width: 1040px;
+width: 100%;
+height: 100vh;
+margin:auto;
+padding: 15px 0 0;
+background-color: #d6a3a359;
+  &-main{
+  margin:auto;
+  width:500px;
+  height:50vh;
+    &__form{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    }
+  }
+}
+.contactcomp_back{
+  background-color: #fff;
+  border-radius: 4%;
+  margin: auto;
+  margin-bottom: 60px;
+  font-size: 20px;
+  width: 180px;
   height: 80px;
   text-align: center;
   display: block;
