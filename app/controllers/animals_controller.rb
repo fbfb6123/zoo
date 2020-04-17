@@ -8,7 +8,6 @@ class AnimalsController < ApplicationController
   def show
     @animal = Animal.new
     @animals = Animal.find(params[:id])
-    @dog = Animal.where(species:0).paginate(page: params[:page], per_page: 8)
   end
 
   def new
