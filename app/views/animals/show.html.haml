@@ -7,19 +7,22 @@
         %tr
           %th.name 名前
           %td 
-            ぽち
+            = @animals.name
         %tr
           %th.condition 性別
           %td 
-            ♂
+            -if @animals.gender == '0'
+              男
+            -else
+              女
         %tr
           %th.brand 種類
           %td 
-            柴犬
+            = @animals.type
         %tr
           %th.brand 歳
           %td 
-            3歳
+            = @animals.age
         %tr
           %th.condition 施設名
           %td 

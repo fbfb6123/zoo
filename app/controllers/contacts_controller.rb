@@ -14,7 +14,9 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
+    @animaldata = Animal.all
     if @contact.save
+      @animaldata.update(buyer_id: current_user.id)
       ContactMailer.contact_mail(@contact).deliver
       redirect_to contacts_path,notice: 'Contact was successfully created.'
     end
