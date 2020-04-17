@@ -2,6 +2,7 @@ class CreateAnimals < ActiveRecord::Migration[5.2]
   def change
     create_table :animals do |t|
       t.string :name,             null: false
+      t.string :text,             null: false
       t.string :species,             null: false
       t.string :type,              null: false
       t.string :gender,        null: false
