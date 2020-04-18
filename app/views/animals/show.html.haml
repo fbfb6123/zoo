@@ -42,7 +42,10 @@
   .animals_main-btn  
     .animals_main-btn__form
       .animals_main-btn__form__submit
-        = link_to "応募する", new_contact_path, class: 'btn btn-default'
+        -if @animals.buyer_id.present?
+          応募済み
+        -else
+          = link_to "応募する", new_contact_path, class: 'btn btn-default'
 
 
 
