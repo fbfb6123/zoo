@@ -1,6 +1,13 @@
 =render 'shared/header'
 .animals_main
   .animals_main-image
+    .main-image1-sub
+      = image_tag @animals.image1,height: '20%', width: '20%'
+    .main-images-sub
+      .main-images-sub2
+        = image_tag @animals.image2,height: '20%', width: '20%'
+      .main-images-sub3
+        = image_tag @animals.image3,height: '20%', width: '20%'
   .animals_main-box
     .table
       %table
