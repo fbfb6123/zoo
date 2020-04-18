@@ -21,4 +21,5 @@
       = f.text_area :content,class: "contact_a-btn_form",placeholder: "ご希望の連絡日を第三希望までご記入ください。その他ご不明な点につきましてもあわせてご記入ください。"
     .actions
       = f.submit '申し込む',class: "contact_save"
-      = link_to '戻る', root_path, class: "contact_back"
+      %button{type: "button", onclick: "history.back()",class: "contact_back"} もどる
+     

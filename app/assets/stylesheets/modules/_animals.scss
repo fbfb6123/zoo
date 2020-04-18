@@ -106,21 +106,22 @@ width: 100vw;
     
     }
       .animals_main-btn__form__submit{
-      margin-left: 255px;
+      margin-left: 240px;
       margin-top: 20px;
       border-radius: 10px;
-      width: 120px;
-      height: 60px;
+      width: 140px;
+      height: 70px;
       background-color: #0aa7f0;
       text-align: center;
-      line-height: 60px;
+      line-height: 70px;
       position: relative;
+      font-size: 20px;
         &__bottom-btn{
         background-color: #ccc;
-        width: 120px;
-        height: 60px;
+        width: 140px;
+        height: 70px;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 20px;
         }
         .btn{
         color: #181717;
