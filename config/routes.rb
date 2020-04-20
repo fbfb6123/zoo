@@ -14,4 +14,5 @@ Rails.application.routes.draw do
     resources :animals, only: [:index,:new,:create,:edit, :update]
   end
   resources :animals, only: [:show]
+  resources :reviews, only: [:index, :show, :new, :create]
 end
