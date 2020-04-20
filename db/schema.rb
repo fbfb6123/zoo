@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
+
 ActiveRecord::Schema.define(version: 2020_04_20_163519) do
 
   create_table "animals", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -123,9 +124,11 @@ ActiveRecord::Schema.define(version: 2020_04_20_163519) do
   add_foreign_key "animals", "users", column: "buyer_id"
   add_foreign_key "facilities", "prefectures"
   add_foreign_key "reviews", "users"
+
   add_foreign_key "favorites", "animals"
   add_foreign_key "favorites", "users"
   add_foreign_key "likes", "facilities"
   add_foreign_key "likes", "users"
 
+end
 end
