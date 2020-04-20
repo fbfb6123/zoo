@@ -14,5 +14,8 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
     resources :animals, only: [:index,:new,:create,:edit, :update]
   end
-  resources :animals, only: [:show]
+  resources :animals, only: [:show] do
+    resources :favorites, only: [:create, :destroy]
+  end
+
 end
