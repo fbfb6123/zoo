@@ -16,9 +16,10 @@ Rails.application.routes.draw do
   end
 
 
+
+
   resources :animals, only: [:show] do
     resources :favorites, only: [:create, :destroy]
   end
 
 end
-
