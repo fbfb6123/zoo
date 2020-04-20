@@ -246,13 +246,14 @@
       height:100vh;
       width:20vw;
       padding-top: 20px;
-      background-color: #ffffff;
-      
+      background-color: #f1eeee;
+      box-sizing: border-box;
       &__contents{
+      border-radius: 10px;
       height: 400px;
       width: 180px;
       margin:0 auto;
-      padding-top: 40px;   
+      padding-top: 40px;
         &__cheak-list{
           height: 100px;
           background-color: #ddd;
@@ -260,14 +261,17 @@
           border: 1px solid rgb(26, 24, 24);
           line-height: 100px;
           font-size :13px;
+          border-radius: 10px;
+          margin-top: 5px;
         }
         }
     }
     .main_chat{
     background-color: #9c8888;
-    height:100%;
+    height:100vh;
     width: 100%;
     padding: 20px 40px;
+    box-sizing: border-box;
       &__box{
       
       text-align: center;
