@@ -19,6 +19,7 @@ class FacilitiesController < ApplicationController
   def show
     @facility = Facility.find(params[:id])
     @animal = Animal.where(facility_id:params[:id]).paginate(page: params[:page], per_page: 8)
+    @like = Like.new
   end
 
   private
