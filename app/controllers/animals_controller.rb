@@ -8,6 +8,7 @@ class AnimalsController < ApplicationController
   def show
     @animal = Animal.new
     @animals = Animal.find(params[:id])
+    @favorite = Favorite.new
   end
 
   def new

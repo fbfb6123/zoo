@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_20_152225) do
+ActiveRecord::Schema.define(version: 2020_04_20_163519) do
 
   create_table "animals", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -63,6 +63,15 @@ ActiveRecord::Schema.define(version: 2020_04_20_152225) do
     t.index ["prefecture_id"], name: "index_facilities_on_prefecture_id"
   end
 
+  create_table "favorites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "animal_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["animal_id"], name: "index_favorites_on_animal_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
+  end
+
   create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "facility_id"
     t.bigint "user_id"
@@ -102,6 +111,8 @@ ActiveRecord::Schema.define(version: 2020_04_20_152225) do
   add_foreign_key "animals", "facilities"
   add_foreign_key "animals", "users", column: "buyer_id"
   add_foreign_key "facilities", "prefectures"
+  add_foreign_key "favorites", "animals"
+  add_foreign_key "favorites", "users"
   add_foreign_key "likes", "facilities"
   add_foreign_key "likes", "users"
 end
