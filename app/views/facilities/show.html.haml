@@ -2,8 +2,16 @@
 .animalmain
   .animalmain__first
     .animalmain__first--name
-      =@facility.name
-      一覧
+      .animalmain__first--name-name
+        =@facility.name
+        一覧
+      .animalmain__first--name-like
+        -if user_signed_in? 
+          - if current_user.already_liked?(@facility)
+            = button_to 'お気に入り解除',facility_like_path(@facility),method: :delete
+          - else 
+            = button_to 'お気に入り登録',facility_likes_path(@facility)
+        -else
     .animalmain__first--contents
       - @animal.each_slice(4) do |dog1,dog2,dog3,dog4|
         .animalmains
