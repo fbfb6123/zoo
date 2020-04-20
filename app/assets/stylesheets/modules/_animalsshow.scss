@@ -14,8 +14,16 @@
       padding-top: 10px;
       font-size:30px;
       font-weight: bold;
-      text-align: center;
       padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      &-name{
+        
+      }
+      &-like{
+        padding-left: 10px;
+        
+      }
     }
     &--contents{
       .animalmains{
