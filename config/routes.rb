@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'tops#index' 
 
-  resources :users, only: [:show, :edit, :update]
+  resources :users, only: [:index,:show, :edit, :update]
   resources :dogs, only: [:index]
   resources :cats, only: [:index]
   resources :areas, only: [:index]
