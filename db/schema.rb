@@ -125,4 +125,5 @@ ActiveRecord::Schema.define(version: 2020_04_20_163519) do
   add_foreign_key "favorites", "users"
   add_foreign_key "likes", "facilities"
   add_foreign_key "likes", "users"
+  add_foreign_key "reviews", "users"
 end
