@@ -19,7 +19,6 @@ class AnimalsController < ApplicationController
   def create
     @facility = Facility.find(params[:facility_id])
     @animal = @facility.animals.new(animal_params)
-    
     if @animal.save
       redirect_to root_path
     else
