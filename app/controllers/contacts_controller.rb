@@ -2,29 +2,30 @@ class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   def index
-    @contacts = Contact.all
+    @contact = Contact.new
   end
 
   def show
+    @contact = Contact.new
   end
 
   def new
     @animal = Animal.find(params[:animal_id])
-    @contact = @animal.contact.new(animal_params)
-    @contacts = Animal.contact.new(animal_params)
+    @contact = Contact.new
     @animaldata = Animal.all
 
   end
 
   def create
     @animal = Animal.find(params[:animal_id])
-    @contact = @animal.contact.new(contact_params)
-    @contacts = Animal.contact.new(contact_params)
-    @animaldata = Animal.all
+    @contact = @animal.contacts.new(contact_params)
+
     if @contact.save
-      @animaldata.update(buyer_id: current_user.id)
+      @animal.update(buyer_id: current_user.id)
       ContactMailer.contact_mail(@contact).deliver
-      redirect_to contacts_path,notice: 'Contact was successfully created.'
+      redirect_to animal_contacts_path,notice: 'Contact was successfully created.'
+    else
+      render :new
     end
   end
 
@@ -55,6 +56,7 @@ class ContactsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_contact
       @contact = Contact.find(contact_params)
+      @animal = Animal.find(params[:animal_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
