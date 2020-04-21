@@ -1,0 +1,93 @@
+=render 'shared/header'
+.wrapper
+  .views
+    = render 'shared/side_bar'
+    .mainlike
+      .mainlike__areas
+        .mainlike__areas--title
+          お気に入り施設一覧
+        .mainlike__areas--area
+          - @facility.each do |facility|
+            .mainlike__areas--area-name
+              =link_to facility_path(facility),class:"area" do
+                = facility.name
+      .mainlike__animals
+        .mainlike__animals--title
+          お気に入り動物一覧
+        .mainlike__animals--animal
+          - @favorite.each_slice(4) do |animal1,animal2,animal3,animal4|
+            .animalmains
+              .animalmains-content
+                = link_to animal_path(animal1) do
+                  .first_image
+                    = image_tag animal1.image1,height: '130px', width: '200px'
+                  .first_name
+                    名前：
+                    = animal1.name
+                  .first_area
+                    場所：
+                    - facility = Facility.find_by(id: animal1.facility_id)
+                    = facility.name
+                  .first_gender
+                    性別：
+                    -if animal1.gender == '0'
+                      男
+                    -else
+                      女
+              -if animal2.present?
+                .animalmains-content
+                  = link_to animal_path(animal2) do
+                    .first_image
+                      = image_tag animal2.image1,height: '130px', width: '200px'
+                    .first_name
+                      名前：
+                      = animal2.name
+                    .first_area
+                      場所：
+                      - facility = Facility.find_by(id: animal2.facility_id)
+                      = facility.name
+                    .first_gender
+                      性別：
+                      -if animal2.gender == '0'
+                        男
+                      -else
+                        女
+              -if animal3.present?
+                .animalmains-content
+                  = link_to animal_path(animal3) do
+                    .first_image
+                      = image_tag animal3.image1,height: '130px', width: '200px'
+                    .first_name
+                      名前：
+                      = animal3.name
+                    .first_area
+                      場所：
+                      - facility = Facility.find_by(id: animal3.facility_id)
+                      = facility.name
+                    .first_gender
+                      性別：
+                      -if animal3.gender == '0'
+                        男
+                      -else
+                        女
+              -if animal4.present?
+                .animalmains-content
+                  = link_to animal_path(animal4) do
+                    .first_image
+                      = image_tag animal4.image1,height: '130px', width: '200px'
+                    .first_name
+                      名前：
+                      = animal4.name
+                    .first_area
+                      場所：
+                      - facility = Facility.find_by(id: animal4.facility_id)
+                      = facility.name
+                    .first_gender
+                      性別：
+                      -if animal4.gender == '0'
+                        男
+                      -else
+                        女
+      .animalmain__second
+        -# = will_paginate @favorite, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
+=render 'shared/fotter'

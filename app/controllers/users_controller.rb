@@ -3,6 +3,10 @@ class UsersController < ApplicationController
   before_action :set_current_user
 
   def index
+    @facilities = Like.where(user_id: current_user.id).pluck(:facility_id)
+    @facility = Facility.find(@facilities)
+    @favorites = Favorite.where(user_id: current_user.id).pluck(:animal_id)
+    @favorite = Animal.find(@favorites)
   end
 
   def show
