@@ -1,59 +1,60 @@
 =render 'shared/header'
 .animals_main
-  .animals_main-image
-    .main-image1-sub
-      = image_tag @animals.image1,height: '80%', width: '80%'
-      -if user_signed_in? 
-        - if current_user.already_favorited?(@animals)
-          = button_to 'お気に入り解除',animal_favorite_path(@animals),method: :delete
-        - else 
-          = button_to 'お気に入り登録',animal_favorites_path(@animals)
-      -else
-    .main-images-sub
-      .main-images-sub2
-        = image_tag @animals.image2,height: '80%', width: '80%'
-      .main-images-sub3
-        = image_tag @animals.image3,height: '80%', width: '80%'
-  .animals_main-box
-    .table
-      %table
-        %tr
-          %th.name 名前
-          %td 
-            = @animals.name
-        %tr
-          %th.condition 性別
-          %td 
-            -if @animals.gender == '0'
-              男
-            -else
-              女
-        %tr
-          %th.brand 種類
-          %td 
-            = @animals.type
-        %tr
-          %th.brand 歳
-          %td 
-            = @animals.age
-        %tr
-          %th.condition 施設名
-          %td 
-            = @animals.facility.name
-        %tr
-          %th.category 説明
-          %td.category-list
-            = @animals.text
-
-  .animals_main-btn  
-    .animals_main-btn__form
-      .animals_main-btn__form__submit
-        -if @animals.buyer_id.present?
-          応募済み
+  - if @animals.image1.present?
+    .animals_main-image
+      .main-image1-sub
+        = image_tag @animals.image1,height: '80%', width: '80%'
+        -if user_signed_in? 
+          - if current_user.already_favorited?(@animals)
+            = button_to 'お気に入り解除',animal_favorite_path(@animals),method: :delete
+          - else 
+            = button_to 'お気に入り登録',animal_favorites_path(@animals)
         -else
-          = link_to "応募する", new_contact_path(params[:id]), class: 'btn btn-default'
-      .animals_main-btn__form__submit
-        %button{type: "button", onclick: "history.back()",class: 'animals_main-btn__form__submit__bottom-btn back'} もどる
+      .main-images-sub
+        .main-images-sub2
+          = image_tag @animals.image2,height: '80%', width: '80%'
+        .main-images-sub3
+          = image_tag @animals.image3,height: '80%', width: '80%'
+    .animals_main-box
+      .table
+        %table
+          %tr
+            %th.name 名前
+            %td 
+              = @animals.name
+          %tr
+            %th.condition 性別
+            %td 
+              -if @animals.gender == '0'
+                男
+              -else
+                女
+          %tr
+            %th.brand 種類
+            %td 
+              = @animals.type
+          %tr
+            %th.brand 歳
+            %td 
+              = @animals.age
+          %tr
+            %th.condition 施設名
+            %td 
+              = @animals.facility.name
+          %tr
+            %th.category 説明
+            %td.category-list
+              = @animals.text
+
+    .animals_main-btn  
+      .animals_main-btn__form
+        .animals_main-btn__form__submit
+          -if @animals.buyer_id.present?
+            応募済み
+          -else
+            = link_to "応募する", new_animal_contact_path(params[:id]), class: 'btn btn-default'
+        .animals_main-btn__form__submit
+          %button{type: "button", onclick: "history.back()",class: 'animals_main-btn__form__submit__bottom-btn back'} もどる
 
 
 
