@@ -2,7 +2,7 @@
 
   .contact-main__form
     応募申し込み
-  = form_for @contact do |f|
+  = form_for [@animal, @contact] do |f|
     - if @contact.errors.any?
       #error_explanation
         %h2= "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"

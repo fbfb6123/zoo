@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
-  resources :contacts
   devise_for :users
   root 'tops#index' 
 
@@ -21,6 +20,7 @@ Rails.application.routes.draw do
 
   resources :animals, only: [:show] do
     resources :favorites, only: [:create, :destroy]
+    resources :contacts, only: [:index,:new,:create,:edit, :update]
   end
 
 end

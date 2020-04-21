@@ -9,11 +9,17 @@ class ContactsController < ApplicationController
   end
 
   def new
-    @contact = Contact.new
+    @animal = Animal.find(params[:animal_id])
+    @contact = @animal.contact.new(animal_params)
+    @contacts = Animal.contact.new(animal_params)
+    @animaldata = Animal.all
+
   end
 
   def create
-    @contact = Contact.new(contact_params)
+    @animal = Animal.find(params[:animal_id])
+    @contact = @animal.contact.new(contact_params)
+    @contacts = Animal.contact.new(contact_params)
     @animaldata = Animal.all
     if @contact.save
       @animaldata.update(buyer_id: current_user.id)
@@ -48,7 +54,7 @@ class ContactsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_contact
-      @contact = Contact.find(params[:id])
+      @contact = Contact.find(contact_params)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

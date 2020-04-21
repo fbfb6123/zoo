@@ -4,7 +4,6 @@ class Animal < ApplicationRecord
   belongs_to :user, optional: true
   belongs_to :facility
 
-
   has_many :favorites
   has_many :favorited_users, through: :favorites, source: :user
 end
