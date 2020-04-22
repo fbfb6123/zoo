@@ -1,5 +1,7 @@
 .mainlike{
-  background-color: #9c8888;
+  background-image: url(/assets/cat2.jpg);
+  background-position : 50% 50%;
+  background-size: cover;
   height:100vh;
   width: 100%;
   padding: 20px 40px;
@@ -12,6 +14,7 @@
       width: 300px;
       margin: 0 auto;
       padding-bottom: 10px;
+      color:rgb(177, 0, 15);
     }
     &--area{
       text-align: center;
@@ -19,7 +22,8 @@
       overflow: scroll;
       height: 150px;
       width: 500px;
-      background-color: white;
+      background-image: url(/assets/sky1.jpg);
+      border-radius:20px;
       &-name{
         font-weight: normal;
       }
@@ -38,6 +42,7 @@
       width: 300px;
       margin: 0 auto;
       padding-bottom: 10px;
+      color:rgb(177, 0, 15);
     }
     &--animal{
       .animalmains{
@@ -63,7 +68,24 @@
             width: 200px;
             background-color: white;
           }
+          a{
+            color: black;
+          }
         }
+      }
+    }
+  }
+  &__second{
+    .pagination{
+      margin: 0 auto;
+      display: flex;
+      li{
+        padding: 15px 10px;
+      }
+      a{
+        font-size: 20px;
+        font-weight: bold;
+        color:white;
       }
     }
   }

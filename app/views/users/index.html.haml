@@ -88,6 +88,6 @@
                         男
                       -else
                         女
-      .animalmain__second
-        -# = will_paginate @favorite, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
+      .mainlike__second
+        = will_paginate @favorite, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
 =render 'shared/fotter'
