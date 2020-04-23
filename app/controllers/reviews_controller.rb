@@ -2,6 +2,7 @@ class ReviewsController < ApplicationController
   before_action :set_review
 
   def index
+    
   end
 
   def show
