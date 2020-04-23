@@ -1,0 +1,41 @@
+
+.main_chats{
+background-color: #9c8888;
+height:100vh;
+width: 100%;
+padding: 20px 40px;
+box-sizing: border-box;
+background-image: url(/assets/dog-1517090_1280.png);
+  &-title{
+  margin: auto;
+  height:50px;
+  width: 600px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  }
+}
+
+.main__second--contents-btn{
+margin-top: 30px;
+height:50px;
+width: 200px;
+background-color: #F7B46B;
+text-align: center;
+line-height: 50px;
+border-radius: 25px;
+position: relative;
+  a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 50px;
+  color: #302e2e;
+  font-size: 20px;
+  }
+}
