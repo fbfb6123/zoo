@@ -1,7 +1,27 @@
-= form_for [@animal, @review] do |f|
-  = f.text_field :name, class: 'form__message', placeholder: 'type a message'
-  = f.text_field :text, class: 'form__message', placeholder: 'type a message'
-  .form__mask
-    = f.label :image, class: 'form__mask__image' do
-      = f.file_field :image, class: 'hidden'
-  = f.submit 'Send', class: 'form__submit'
+= render 'shared/header'
+
+.review
+  .review_main
+    .review_main-left
+      .review_main-left_title
+        Review Form
+      
+      .review_main-left_back
+        %button{type: "button", onclick: "history.back()",class: 'review_main-left_back__bottom-btn back'} BACK
+
+
+    .review_main-right
+      = form_for [@animal, @review] do |f|
+        .review_main-right2
+          名前
+          = f.text_field :name, class: 'form__message'
+        .review_main-right1
+          内容
+          = f.text_field :text, class: 'form__message2',placeholder: ""
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = f.file_field :image, class: 'hidden'
+        = f.submit '投稿する', class: 'form__submit'
+
+
+= render 'shared/fotter'
