@@ -14,13 +14,14 @@ Rails.application.routes.draw do
     resources :animals, only: [:index,:new,:create,:edit, :update]
   end
 
-  resources :reviews, only: [:index,:new,:create,:show, :edit, :update]
+  resources :reviews, only: [:index,:new,:create, :edit, :update]
 
 
 
   resources :animals, only: [:index,:new,:create,:show, :edit, :update] do
     resources :favorites, only: [:create, :destroy]
     resources :contacts, only: [:index,:new,:create,:edit, :update]
+    resources :reviews, only: [:create, :show, :edit, :update]
   end
 
 end
