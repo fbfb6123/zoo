@@ -2,9 +2,8 @@ class ReviewsController < ApplicationController
   before_action :set_review
 
   def index
-    @animal = Animal.all
+    @animal = Animal.where(buyer_id: current_user.id).limit(4).order('id ASC')
     @animals = Animal.all
-    
   end
 
   def show
