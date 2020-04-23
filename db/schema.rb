@@ -94,8 +94,10 @@ ActiveRecord::Schema.define(version: 2020_04_20_163519) do
     t.string "text", null: false
     t.string "image"
     t.bigint "user_id"
+    t.bigint "animal_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["animal_id"], name: "index_reviews_on_animal_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
@@ -128,5 +130,6 @@ ActiveRecord::Schema.define(version: 2020_04_20_163519) do
   add_foreign_key "favorites", "users"
   add_foreign_key "likes", "facilities"
   add_foreign_key "likes", "users"
+  add_foreign_key "reviews", "animals"
   add_foreign_key "reviews", "users"
 end

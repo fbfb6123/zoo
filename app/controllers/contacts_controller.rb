@@ -12,14 +12,12 @@ class ContactsController < ApplicationController
   def new
     @animal = Animal.find(params[:animal_id])
     @contact = Contact.new
-    @animaldata = Animal.all
 
   end
 
   def create
     @animal = Animal.find(params[:animal_id])
     @contact = @animal.contacts.new(contact_params)
-
     if @contact.save
       @animal.update(buyer_id: current_user.id)
       ContactMailer.contact_mail(@contact).deliver

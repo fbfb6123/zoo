@@ -1,4 +1,4 @@
-= form_for [@review] do |f|
+= form_for [@animal, @review] do |f|
   = f.text_field :name, class: 'form__message', placeholder: 'type a message'
   = f.text_field :text, class: 'form__message', placeholder: 'type a message'
   .form__mask

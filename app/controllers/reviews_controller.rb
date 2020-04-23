@@ -12,7 +12,8 @@ class ReviewsController < ApplicationController
   end
 
   def new
-
+    @animal = Animal.find(params[:animal_id])
+    @review = Review.new
   end
 
 
@@ -20,10 +21,11 @@ class ReviewsController < ApplicationController
   def create
     @animal = Animal.find(params[:animal_id])
     @review = @animal.reviews.new(review_params)
+    
     if @review.save
       redirect_to root_path, notice: 'メッセージが送信されました'
     else
-      render :index
+      render :new
     end
   end
 
