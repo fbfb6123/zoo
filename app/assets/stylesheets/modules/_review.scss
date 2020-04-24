@@ -126,3 +126,78 @@ background-color: #fff;
   }
 }
 
+
+.review{
+background-color: #f1eeee;
+width: 100vw;
+  &__animals{
+  margin: 0 auto;
+  background-color: #f5e4e4;
+  max-width: 1000px;
+  width: 100%;
+  height:100vh;
+  position: relative;
+    &_image{
+    margin-left: 290px;
+    height:300px;
+    width: 400px;
+    padding-top: 10px;
+
+    }
+      &_name{
+      margin: auto;
+      margin-right: 80px ;
+      font-size: 20px;
+      font-weight: bold;
+      height:30px;
+      width:140px;
+      }
+      &_main{
+      margin: auto;
+      margin-top: 10px;
+      margin-left:110px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 30px;
+      height:30px;
+      width:200px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      }
+      &_text{
+      margin: auto;
+      box-sizing: border-box;
+      margin-top: 20px;
+      font-size: 16px;
+      height:230px;
+      width:480px;
+      text-align: left;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      position: absolute;
+      top: 380px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      }
+  &_submit{
+  margin: auto;
+  margin-top: 350px;
+  background-color: rgb(223, 25, 25);
+  width: 140px;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 70px;
+    &-btn{
+    font-size: 20px;
+    width: 140px;
+    height: 70px;
+    background-color: rgb(247, 19, 19);
+    color: #f5efef;
+    border-radius: 10px;
+    }
+  }
+  }
+}
+

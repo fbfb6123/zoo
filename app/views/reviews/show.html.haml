@@ -1,6 +1,18 @@
 =render 'shared/header'
+.review
+  .review__animals
+    .review__animals_image
+      = image_tag @review.image.url,height: '100%', width: '100%'
 
-      
+      .review__animals_name
+        名前
+      .review__animals_main
+        = @review.name
+      .review__animals_text
+        = @review.text
+        
+    .review__animals_submit
+      %button{type: "button", onclick: "history.back()",class: 'review__animals_submit-btn back'} もどる
          
 
 =render 'shared/fotter'

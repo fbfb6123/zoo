@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
 
   def show
     @animal = Animal.limit(4).order('id DESC')
-    @animals = Review.find(params[:id])
+    @review = Review.find(params[:id])
   end
 
   def new
