@@ -6,7 +6,7 @@ RELIEF
 
 
 ## 簡単な説明
-保健所施設からの動物（犬、猫）の引き取りをアプリ内で行えるもの。
+保健所施設からの動物（犬、猫）の引き取りを行えるアプリ
 
  
 ## 機能
@@ -67,13 +67,11 @@ RELIEF
 
 
  
-## その他
+## 工夫した点
  
+## その他
 
 
-
-
-## movere DB設計
 
 ## movere DB設計
 
@@ -89,19 +87,27 @@ RELIEF
 |first_name_kana|string|null: false|
 |last_name_kana|string|null: false|
 ### Association
-- has_many :facilitys
-- has_many :qacomments
-- has_many :reviews
+- has_many :animals
+- has_many :facilities, dependent: :destroy
+- has_many :likes, dependent: :destroy
+- has_many :liked_facilities, through: :likes, source: :post
+- has_many :posts, dependent: :destroy
+- has_many :favorites, dependent: :destroy
+- has_many :favorited_animals, through: :favorites, source: :animal
+- has_many :animals, dependent: :destroy
+- validates :name, presence: true, uniqueness: true
 
 ## facilitysテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|area|text|null: false|
+|prefecture|references|null: false, foreign_key: true|
 
 ### Association
 - has_many :animals
-- has_many :qacomments
+- belongs_to :user, optional: true
+- has_many :likes
+- has_many :liked_users, through: :likes, source: :user
 
 ## animalsテーブル
 |Column|Type|Options|
@@ -118,36 +124,87 @@ RELIEF
 |facility_id|references|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :user
+- belongs_to :user, optional: true
 - belongs_to :facility
+- has_many :reviews
+- has_many :contacts
+- has_many :favorites
+- has_many :favorited_users, through: :favorites, source: :user
 
-## qacommentsテーブル
+## reviewsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|name|text|null: false|
 |text|text|null: false|
+|image|string|null: false|
 |user_id|references|null: false, foreign_key: true|
 |animal_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :animal
+- validates :content, presence: true, unless: :image?
+- mount_uploader :image, ImageUploader
+
+## prefecturesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|
+
+
+## contactsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|content|string|null: false|
+|name|string|null: false|
+|animal_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :animal
 
 ## eventsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|
-|image|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
-
-## reviewsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|
-|image|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
+|place|string|null: false|
+|startmonth|string|null: false|
+|startday|string|null: false|
+|starttime|string|null: false|
+|startminute|string|null: false|
+|endmonth|string|
+|endday|string|
+|endtime|string|null: false|
+|endminute|string|null: false|
+|text|string|null: false|
+|image|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
+
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|facility_id|references|null: false, foreign_key: true|
+|userl_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :facility
+- belongs_to :user
+- validates_uniqueness_of :facility_id,scope: :user_id
+
+## favoritesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|animal_id|references|null: false, foreign_key: true|
+|userl_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :animal
+- belongs_to :user
+- validates_uniqueness_of :animal_id,scope: :user_id
+
 
 ## test
 maypage
