@@ -53,7 +53,7 @@ RELIEF
 <br>
 
 - ユーザ情報
-<img width="1438" alt="3a8c2a795d74f96e0308ad879596e535" src="https://user-images.githubusercontent.com/60612010/80190205-d9ed4c80-864e-11ea-97cb-d2e1a6cf8b68.png">
+<img width="1440" alt="e9e0bd3ddf53a17c4566d6dad5958011" src="https://user-images.githubusercontent.com/60612010/80200760-14121a80-865e-11ea-9271-4c5a55cf28e4.png">
 
 - チェックリスト
 ※それぞれクリックすると詳細に移動します。
