@@ -57,7 +57,7 @@ RELIEF
 
 - チェックリスト
 ※それぞれクリックすると詳細に移動します。
-![9e065eaff605e87be4a2466d766cd29c](https://user-images.githubusercontent.com/60612010/80190019-95fa4780-864e-11ea-86d2-32786d0ec37a.jpg)
+![8a898d1befef6c7509a88455f4e5f8ea](https://user-images.githubusercontent.com/60612010/80191545-d22ea780-8650-11ea-9565-d8fe6157f060.jpg)
 
 - レビュー（記録）
 ※レビューに投稿に表示される動物は応募した動物のみとなります。投稿するをクリックすると入力フォーム画面に移動します。
