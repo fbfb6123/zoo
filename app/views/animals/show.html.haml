@@ -50,7 +50,7 @@
       .animals_main-btn__form
         .animals_main-btn__form__submit
           -if @animals.buyer_id.present?
-            応募済み
+            CLOSE
           -else
             = link_to "応募する", new_animal_contact_path(params[:id]), class: 'btn btn-default'
         .animals_main-btn__form__submit

@@ -114,7 +114,7 @@
       Events
     .mains__fifth--contents
       -@event.each do |event|
-        = link_to "animal_review_path" do
+        = link_to "#" do
           .mains__fifth--contents-content
             .fifth_image
               = image_tag event.image,height: '130px', width: '300px'
@@ -129,7 +129,7 @@
       Owner Posts
     .mains__sixth--contents
       -@review.each do |review|
-        = link_to animal_path(review) do
+        = link_to review_path(review) do
           .mains__sixth--contents-content
             .sixth_name
               題名：
