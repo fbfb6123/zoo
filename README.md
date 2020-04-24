@@ -49,6 +49,8 @@ RELIEF
 - チェックリストの閲覧
 - レビュー投稿
 
+
+
 - ユーザ情報
 <img width="1438" alt="3a8c2a795d74f96e0308ad879596e535" src="https://user-images.githubusercontent.com/60612010/80190205-d9ed4c80-864e-11ea-97cb-d2e1a6cf8b68.png">
 
