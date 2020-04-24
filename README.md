@@ -41,8 +41,24 @@ RELIEF
 <img width="1437" alt="dc300b1c28b7aafd2db4f7040e18c64c" src="https://user-images.githubusercontent.com/60612010/80188664-76621f80-864c-11ea-8799-3010a04b4ef7.png">
 
 2. 応募の手順
-- 必要項目を入力して申し込むをクリックすると完了です。
+- 必要項目を入力して申し込むをクリックすると応募完了です
 <img width="1440" alt="79fe8294fe4d986123063e694e666081" src="https://user-images.githubusercontent.com/60612010/80188989-ebcdf000-864c-11ea-9c40-ded05f01bf36.png">
+
+3. マイページで行えることは主に3つです。
+- ユーザー情報の確認・編集
+- お気に入りリストの閲覧
+- レビュー投稿
+
+ユーザ情報
+<img width="1438" alt="3a8c2a795d74f96e0308ad879596e535" src="https://user-images.githubusercontent.com/60612010/80190205-d9ed4c80-864e-11ea-97cb-d2e1a6cf8b68.png">
+
+お気に入りリスト
+![9e065eaff605e87be4a2466d766cd29c](https://user-images.githubusercontent.com/60612010/80190019-95fa4780-864e-11ea-86d2-32786d0ec37a.jpg)
+
+レビュー（記録）
+<img width="1439" alt="1d14c6cb728e720f951ea532213b6f1e" src="https://user-images.githubusercontent.com/60612010/80189651-f76de680-864d-11ea-9c57-8bd17b61340d.png">
+※レビューに投稿に表示される動物は応募した動物のみとなります。
+
 
  
 ## その他
