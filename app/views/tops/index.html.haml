@@ -1,8 +1,8 @@
 .header
   .header__left
     =link_to root_path do
-      = image_tag 'header.png', height: '60', width: '80', class: 'image1'
-      ZOO
+      = image_tag 'header.png', height: '50', width: '70', class: 'image1'
+      RELIEF
   .header__right
     -if user_signed_in? 
       .header__right--left
@@ -132,7 +132,7 @@
         = link_to review_path(review) do
           .mains__sixth--contents-content
             .sixth_name
-              題名：
+              名前：
               = review.name
             .sixth_image
               = image_tag review.image.url,height: '100%', width: '100%'

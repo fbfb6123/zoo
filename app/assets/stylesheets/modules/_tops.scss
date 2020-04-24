@@ -4,10 +4,15 @@
   justify-content: space-between;
   background: linear-gradient(-135deg, rgb(195, 239, 250), rgb(73, 171, 236)) fixed;
   &__left{
+    font-family: monospace;
+    margin-top: 10px;
     margin-left: 50px;
-    font-size:70px;
+    font-size: 50px;
     a{
       color: black;
+    }
+    .image1{
+    margin-top: 10px;
     }
   }
   &__center{
@@ -39,7 +44,8 @@
     color: black;
   }
   position: relative;
-  background-image: url(/assets/ivent3.jpg);
+  background-image: url(/assets/6f4eef529b7fc4a16b54d1178f448ae2_t.jpeg);
+  background-size:cover;
   background-position : 50% 50%;
   padding-bottom: 30px;
   &__first{
@@ -269,6 +275,9 @@
       &-content{
         background-color: white;
         margin: 0 20px;
+        .sixth_name{
+        text-align: center;
+        }
         .sixth_image{
           height: 200px;
           width: 300px;

@@ -3,7 +3,7 @@
   - if @animals.image1.present?
     .animals_main-image
       .main-image1-sub
-        = image_tag @animals.image1,height: '80%', width: '80%'
+        = image_tag @animals.image1,height: '90%', width: '90%'
         -if user_signed_in? 
           - if current_user.already_favorited?(@animals)
             = button_to 'お気に入り解除',animal_favorite_path(@animals),method: :delete
@@ -12,9 +12,9 @@
         -else
       .main-images-sub
         .main-images-sub2
-          = image_tag @animals.image2,height: '80%', width: '80%'
+          = image_tag @animals.image2,height: '90%', width: '80%'
         .main-images-sub3
-          = image_tag @animals.image3,height: '80%', width: '80%'
+          = image_tag @animals.image3,height: '90%', width: '80%'
     .animals_main-box
       .table
         %table
