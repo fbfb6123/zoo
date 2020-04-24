@@ -6,7 +6,11 @@
 
     .main_chat
       .main_chat__box
-        ユーザー情報
+        .main_chat__box-box
+          ユーザー情報
+        .main_chat__item-edit
+          =link_to edit_user_path(current_user) do
+            ユーザー情報を編集
       .main_chat__box__item
         .main_chat__box__item-user 
           .main_chat__box__item-users
@@ -30,8 +34,4 @@
           .main_chat__box__item-users
             生年月日：
             = current_user.birthday
-
-      .main_chat__item-edit
-        =link_to edit_user_path(current_user) do
-          ユーザー情報を編集
 =render 'shared/fotter'

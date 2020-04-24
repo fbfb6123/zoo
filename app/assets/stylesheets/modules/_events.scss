@@ -4,7 +4,7 @@
   }
   width: 100%;
   height: 100vh;
-  background-image: url(/assets/ivent4.jpg);
+  background-image: url(/assets/balloons.jpg);
   background-position : 50% 50%;
   background-size: cover;
   padding-bottom: 20px;
@@ -22,7 +22,8 @@
         display: flex;
         justify-content: center;
         &-content{
-          background-color: rgb(247, 247, 177);
+          background-color:rgb(137, 178, 255);
+          border-radius: 10px;
           padding: 10px;
           margin: 30px 20px;
           .first_image{

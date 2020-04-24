@@ -5,7 +5,7 @@
     .mainlike
       .mainlike__areas
         .mainlike__areas--title
-          お気に入り施設一覧
+          チェック施設一覧
         .mainlike__areas--area
           - @facility.each do |facility|
             .mainlike__areas--area-name
@@ -13,7 +13,7 @@
                 = facility.name
       .mainlike__animals
         .mainlike__animals--title
-          お気に入り動物一覧
+          チェック動物一覧
         .mainlike__animals--animal
           - @favorite.each_slice(4) do |animal1,animal2,animal3,animal4|
             .animalmains
