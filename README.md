@@ -28,12 +28,17 @@ RELIEF
  
 ## 使い方
  
-1. 自身で設定した報酬に対して、左下の入力フォームから頑張ったことを投稿。
-- 投稿した内容が入力フォームの上段に表示される。
+1. トップページ
+- 未ログインではトップページの閲覧のみ可能。詳細の閲覧、応募やお気に入り機能を使用したい場合には、右上のマイページ表示（ログイン中のため）になっておりますが、未ログイン時は新規作成に切り替わるのでそちらからアカウントを作成する手順になります。
 ![bc5ccf6c0978f039cb43116ff9862b08](https://user-images.githubusercontent.com/60612010/80186530-14ec8180-8649-11ea-9d43-fd750f9950ab.jpg)
 ![RELIEF](https://user-images.githubusercontent.com/60612010/80186909-bbd11d80-8649-11ea-8364-094729d4e92e.jpg)
 
-2. 
+
+2. 動物の詳細ページ
+- アカウントを取得して、トップページに表示されている動物をクリックしたら、下のように動物の詳細画面が表示されます。
+- 詳細の下画面にスライドすると応募
+<img width="1437" alt="ba3a458eccd25960b3070677d200be6a" src="https://user-images.githubusercontent.com/60612010/80188319-f340c980-864b-11ea-9db8-172d53ac8478.png">
+<img width="1437" alt="dc300b1c28b7aafd2db4f7040e18c64c" src="https://user-images.githubusercontent.com/60612010/80188429-1bc8c380-864c-11ea-9421-716f12b27897.png">
 
  
 ## その他
