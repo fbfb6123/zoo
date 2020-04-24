@@ -254,6 +254,10 @@
       width: 180px;
       margin:0 auto;
       padding-top: 40px;
+        a{
+          font-size: 18px;
+          color: blue;
+        }
         &__cheak-list{
           height: 100px;
           background-color: #ddd;
@@ -273,9 +277,22 @@
     padding: 20px 40px;
     box-sizing: border-box;
       &__box{
-      
-      text-align: center;
-      font-size: 30px;
+      display: flex;
+
+        &-box{
+        text-align: center;
+        font-size: 30px;
+        margin-left: 405px;
+        }
+        .main_chat__item-edit{
+        margin-left: 100px;
+        height:40px;
+        width: 200px;
+        background-color: #e9dcdca2;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 10px;
+        }
       }
         .main_chat__box__item{
         height:150px;
@@ -289,14 +306,6 @@
         padding-top: 40px;
         width: 440px;
         }
-      .main_chat__item-edit{
-      height:40px;
-      width: 200px;
-      background-color: #e9dcdca2;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 10px;
-      }
     }
   }
 }
@@ -305,3 +314,4 @@
   font-size: 15px;
   color: red;
 }
+

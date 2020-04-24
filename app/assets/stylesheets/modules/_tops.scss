@@ -142,6 +142,7 @@
         height: 200px;
         width: 200px;
         background-color: rgb(255, 209, 216);
+        border-radius: 10px;
         margin: 0 30px;
         padding: 10px;
         &-line{
@@ -172,6 +173,7 @@
         background-color: rgb(247, 247, 177);
         margin: 0 30px;
         padding: 10px;
+        border-radius: 10px;
         &-line{
           background-color: white;
           width: 200px;
@@ -200,6 +202,7 @@
         background-color: rgb(186, 252, 173);
         margin: 0 30px;
         padding: 10px;
+        border-radius: 10px;
         &-line{
           background-color: white;
           width: 200px;
@@ -214,8 +217,6 @@
 }
 .mains{
   background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8));
-  background-position : 50% 50%;
-  background-size: cover;
   &__fifth{
     padding-bottom: 30px;
     padding-top:40px;
@@ -235,6 +236,7 @@
         padding: 10px;
         background-color: rgb(191, 228, 250);
         margin: 0 20px;
+        border-radius: 10px;
         .fifth_image{
           height: 130px;
           width: 300px;
