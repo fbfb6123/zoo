@@ -36,9 +36,13 @@ RELIEF
 
 2. 動物の詳細ページ
 - アカウントを取得して、トップページに表示されている動物をクリックしたら、下のように動物の詳細画面が表示されます。
-- 詳細の下画面にスライドすると応募
+- 詳細の下画面にスライドすると応募画面が出てきます。
 <img width="1437" alt="ba3a458eccd25960b3070677d200be6a" src="https://user-images.githubusercontent.com/60612010/80188319-f340c980-864b-11ea-9db8-172d53ac8478.png">
-<img width="1437" alt="dc300b1c28b7aafd2db4f7040e18c64c" src="https://user-images.githubusercontent.com/60612010/80188429-1bc8c380-864c-11ea-9421-716f12b27897.png">
+<img width="1437" alt="dc300b1c28b7aafd2db4f7040e18c64c" src="https://user-images.githubusercontent.com/60612010/80188664-76621f80-864c-11ea-8799-3010a04b4ef7.png">
+
+2. 応募の手順
+- 必要項目を入力して申し込むをクリックすると完了です。
+<img width="1440" alt="79fe8294fe4d986123063e694e666081" src="https://user-images.githubusercontent.com/60612010/80188989-ebcdf000-864c-11ea-9c40-ded05f01bf36.png">
 
  
 ## その他
