@@ -1,0 +1,55 @@
+=render 'shared/header'
+.eventmain
+  .eventmain__first
+    .eventmain__first--name
+      飼い主投稿一覧
+    .eventmain__first--contents
+      - @review.each_slice(4) do |dog1,dog2,dog3,dog4|
+        .eventmains
+          .eventmains-content
+            = link_to review_path(dog1) do
+              .first_image
+                = image_tag dog1.image.url,height: '130px', width: '300px'
+              .first_name
+                名前：
+                = dog1.name
+              .first_area
+                場所：
+                = dog1.text
+          -if dog2.present?
+            .eventmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog2.image.url,height: '130px', width: '300px'
+                .first_name
+                  名前：
+                  = dog2.name
+                .first_area
+                  場所：
+                  = dog2.text
+          -if dog3.present?
+            .eventmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog3.image.url,height: '130px', width: '300px'
+                .first_name
+                  名前：
+                  = dog3.name
+                .first_area
+                  場所：
+                  = dog3.text
+          -if dog4.present?
+            .eventmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog4.image.url,height: '130px', width: '300px'
+                .first_name
+                  名前：
+                  = dog4.name
+                .first_area
+                  場所：
+                  = dog4.text
+
+  .eventmain__second
+    = will_paginate @review, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
+=render 'shared/fotter'
