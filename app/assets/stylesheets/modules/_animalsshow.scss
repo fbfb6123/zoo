@@ -10,6 +10,15 @@
   padding-bottom: 20px;
   &__first{
     padding-top:20px;
+    position: relative;
+    input[type="submit"] {
+      height: 40px;
+      width: 100px;
+      background-color: rgb(253, 244, 244);
+      font-size: 13px;
+      position: absolute;
+      border-radius: 15px;
+    }
     &--name{
       padding-top: 10px;
       font-size:30px;

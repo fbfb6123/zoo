@@ -6,9 +6,9 @@
         = image_tag @animals.image1,height: '90%', width: '90%'
         -if user_signed_in? 
           - if current_user.already_favorited?(@animals)
-            = button_to 'お気に入り解除',animal_favorite_path(@animals),method: :delete
+            = button_to '❤️',animal_favorite_path(@animals),method: :delete
           - else 
-            = button_to 'お気に入り登録',animal_favorites_path(@animals)
+            = button_to '♡',animal_favorites_path(@animals)
         -else
       .main-images-sub
         .main-images-sub2

@@ -1,12 +1,9 @@
-.wrapper
-  .single-header-user
-    .single-header-user-icon-list
-      .single-header__icon-user
-        
+=render 'shared/header'
+.wrappers
   .single-main-user
     .single-main-user-form
       .single-main-user-form__title
-        会員情報入力
+        ユーザー新規登録
       .single-main-user-form__input
         = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
           = devise_error_messages!
@@ -80,11 +77,5 @@
             = f.submit "登録する", class: 'btn'
           .single-main-user-form-verification-me
             
-  .single-fotter
-    %ul.clearfix
-      %li.footer-list
-        =link_to "#",class:"a" do
-          プライバシーポリシー
-      %li.footer-list
-        =link_to "#",class:"a" do
-          利用規約
+
+=render 'shared/fotter'
