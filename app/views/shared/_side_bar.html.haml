@@ -1,13 +1,13 @@
 .side-bar
   .side-bar__contents
-    .side-bar__contents__cheak-list
-      = link_to user_path(current_user.id), class: 'mypage-side-bar__list-item' do
+    = link_to user_path(current_user.id), class: 'mypage-side-bar__list-item' do
+      .side-bar__contents__cheak-list
         ユーザー情報
-    .side-bar__contents__cheak-list
-      = link_to users_path, class: 'mypage-side-bar__list-item' do
+    = link_to users_path, class: 'mypage-side-bar__list-item' do
+      .side-bar__contents__cheak-list
         チェックリスト
-    .side-bar__contents__cheak-list
-      = link_to reviews_path, class: 'mypage-side-bar__list-item' do
+    = link_to reviews_path, class: 'mypage-side-bar__list-item' do
+      .side-bar__contents__cheak-list
         記録
 
 
