@@ -1,5 +1,5 @@
 .header{
-  height:100px;
+  height:130px;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(-135deg, rgb(195, 239, 250), rgb(73, 171, 236)) fixed;
@@ -277,7 +277,9 @@
         margin: 0 20px;
         .sixth_name{
         text-align: center;
+        color: black;
         }
+        
         .sixth_image{
           height: 250px;
           width: 300px;
