@@ -44,70 +44,76 @@
       new animals
     .main__second--contents
       - @animal.each do |animal|
-        .main__second--contents-content
-          .main__second--contents-content-line
-            = link_to animal_path(animal) do
-              .second_image
-                = image_tag animal.image1,height: '130px', width: '200px'
-              .second_name
-                名前：
-                = animal.name
-              .second_area
-                場所：
-                - facility = Facility.find_by(id: animal.facility_id)
-                = facility.name
-              .second_gender
-                性別：
-                -if animal.gender == '0'
-                  ♂
-                -else
-                  ♀
+        -if animal.buyer_id.present?
+        -else
+          .main__second--contents-content
+            .main__second--contents-content-line
+              = link_to animal_path(animal) do
+                .second_image
+                  = image_tag animal.image1,height: '130px', width: '200px'
+                .second_name
+                  名前：
+                  = animal.name
+                .second_area
+                  場所：
+                  - facility = Facility.find_by(id: animal.facility_id)
+                  = facility.name
+                .second_gender
+                  性別：
+                  -if animal.gender == '0'
+                    ♂
+                  -else
+                    ♀
   .main__third
     .main__third--name
       Dogs
     .main__third--contents
       - @dog.each do |dog|
-        .main__third--contents-content
-          .main__third--contents-content-line
-            = link_to animal_path(dog) do
-              .third_image
-                = image_tag dog.image1,height: '130px', width: '200px'
-              .third_name
-                名前：
-                = dog.name
-              .third_area
-                場所：
-                - facility = Facility.find_by(id: dog.facility_id)
-                = facility.name
-              .third_gender
-                性別：
-                -if dog.gender == '0'
-                  ♂
-                -else
-                  ♀
+        -if dog.buyer_id.present?
+        -else
+          .main__third--contents-content
+            .main__third--contents-content-line
+              = link_to animal_path(dog) do
+                .third_image
+                  = image_tag dog.image1,height: '130px', width: '200px'
+                .third_name
+                  名前：
+                  = dog.name
+                .third_area
+                  場所：
+                  - facility = Facility.find_by(id: dog.facility_id)
+                  = facility.name
+                .third_gender
+                  性別：
+                  -if dog.gender == '0'
+                    ♂
+                  -else
+                    ♀
   .main__fourth
     .main__fourth--name
       Cats
     .main__fourth--contents
       - @cat.each do |cat|
-        .main__fourth--contents-content
-          .main__fourth--contents-content-line
-            = link_to animal_path(cat) do
-              .fourth_image
-                = image_tag cat.image1,height: '130px', width: '200px'
-              .fourth_name
-                名前：
-                = cat.name
-              .fourth_area
-                場所：
-                - facility = Facility.find_by(id: cat.facility_id)
-                = facility.name
-              .fourth_gender
-                性別：
-                -if cat.gender == '0'
-                  ♂
-                -else
-                  ♀
+        -if cat.buyer_id.present?
+        -else
+          .main__fourth--contents-content
+            .main__fourth--contents-content-line
+              = link_to animal_path(cat) do
+                .fourth_image
+                  = image_tag cat.image1,height: '130px', width: '200px'
+                .fourth_name
+                  名前：
+                  = cat.name
+                .fourth_area
+                  場所：
+                  - facility = Facility.find_by(id: cat.facility_id)
+                  = facility.name
+                .fourth_gender
+                  性別：
+                  -if cat.gender == '0'
+                    ♂
+                  -else
+                    ♀
 .mains
   .mains__fifth
     .mains__fifth--name
