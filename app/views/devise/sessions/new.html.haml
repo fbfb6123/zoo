@@ -3,7 +3,7 @@
   .single-main-user
     .single-main-user-form
       .single-main-user-form__title
-        登録しているユーザーでログイン
+        ログイン画面
       .single-main-user-form__input
         = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
           = devise_error_messages!
@@ -24,7 +24,7 @@
             .single-main-user-form-verification__contents-list
               ※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。
           .actions
-            = f.submit "登録する", class: 'btn'
+            = f.submit "ログインする", class: 'btn'
           .single-main-user-form-verification-me
             
 
