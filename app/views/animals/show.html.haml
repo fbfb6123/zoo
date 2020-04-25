@@ -13,13 +13,13 @@
       -if @animals.image2.present? && @animals.image3.present?
         .main-images-sub
           .main-images-sub2
-            = image_tag @animals.image2,height: '90%', width: '80%'
+            = image_tag @animals.image2,height: '130px', width: '200px'
           .main-images-sub3
-            = image_tag @animals.image3,height: '90%', width: '80%'
+            = image_tag @animals.image3,height: '130px', width: '200px'
       -elsif @animals.image2.present?
         .main-images-sub
           .main-images-sub2
-            = image_tag @animals.image2,height: '90%', width: '80%'
+            = image_tag @animals.image2,height: '130px', width: '200px'
       -else
     .animals_main-box
       .table

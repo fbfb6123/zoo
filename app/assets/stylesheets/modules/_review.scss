@@ -42,8 +42,6 @@ position: relative;
 
 .review{
 height:100vh;
-width:100vw;
-background-color: #fff;
   &_main{
   display: flex;
     &-left{
@@ -240,6 +238,7 @@ width: 100vw;
             width: 200px;
             background-color: white;
             text-align: center;
+            color: #111010;
           }
           .first_area{
             width: 300px;
