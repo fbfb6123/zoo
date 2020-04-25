@@ -10,11 +10,17 @@
           - else 
             = button_to '♡',animal_favorites_path(@animals)
         -else
-      .main-images-sub
-        .main-images-sub2
-          = image_tag @animals.image2,height: '90%', width: '80%'
-        .main-images-sub3
-          = image_tag @animals.image3,height: '90%', width: '80%'
+      -if @animals.image2.present? && @animals.image3.present?
+        .main-images-sub
+          .main-images-sub2
+            = image_tag @animals.image2,height: '90%', width: '80%'
+          .main-images-sub3
+            = image_tag @animals.image3,height: '90%', width: '80%'
+      -elsif @animals.image2.present?
+        .main-images-sub
+          .main-images-sub2
+            = image_tag @animals.image2,height: '90%', width: '80%'
+      -else
     .animals_main-box
       .table
         %table
