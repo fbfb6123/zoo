@@ -9,46 +9,34 @@
           .reviewmains-content
             = link_to review_path(dog1) do
               .first_image
-                = image_tag dog1.image.url,height: '130px', width: '300px'
+                = image_tag dog1.image.url,height: '130px', width: '200px'
               .first_name
                 名前：
                 = dog1.name
-              .first_area
-                場所：
-                = dog1.text
           -if dog2.present?
             .reviewmains-content
-              = link_to "#" do
+              = link_to review_path(dog2) do
                 .first_image
-                  = image_tag dog2.image.url,height: '130px', width: '300px'
+                  = image_tag dog2.image.url,height: '130px', width: '200px'
                 .first_name
                   名前：
                   = dog2.name
-                .first_area
-                  場所：
-                  = dog2.text
           -if dog3.present?
             .reviewmains-content
-              = link_to "#" do
+              = link_to review_path(dog3) do
                 .first_image
-                  = image_tag dog3.image.url,height: '130px', width: '300px'
+                  = image_tag dog3.image.url,height: '130px', width: '200px'
                 .first_name
                   名前：
                   = dog3.name
-                .first_area
-                  場所：
-                  = dog3.text
           -if dog4.present?
             .reviewmains-content
-              = link_to "#" do
+              = link_to review_path(dog4) do
                 .first_image
-                  = image_tag dog4.image.url,height: '130px', width: '300px'
+                  = image_tag dog4.image.url,height: '130px', width: '200px'
                 .first_name
                   名前：
                   = dog4.name
-                .first_area
-                  場所：
-                  = dog4.text
 
   .reviewmain__second
     = will_paginate @review, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
