@@ -1,12 +1,9 @@
-.wrapper
-  .single-header-user
-    .single-header-user-icon-list
-      .single-header__icon-user
-        
+=render 'shared/header'
+.wrappers        
   .single-main-user
     .single-main-user-form
       .single-main-user-form__title
-        会員情報入力
+        ユーザー情報編集
       .single-main-user-form__input
         = form_for(current_user) do |f|
           .field
@@ -76,15 +73,7 @@
             .single-main-user-form-verification__contents-list
               ※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。
           .actions
-            = f.submit "登録する", class: 'btn'
+            = f.submit "編集する", class: 'btn'
           .single-main-user-form-verification-me
             
-  .single-fotter
-    %ul.clearfix
-      %li.footer-list
-        =link_to "#",class:"a" do
-          プライバシーポリシー
-      %li.footer-list
-        =link_to "#",class:"a" do
-          利用規約
-      %li.footer-list
+=render 'shared/fotter'
