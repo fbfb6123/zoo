@@ -22,6 +22,7 @@
   }
   &__right{
     display: flex;
+    margin-top: 10px;
     margin-right: 40px;
     line-height: 100px;
     &--left{
@@ -50,7 +51,7 @@
   padding-bottom: 30px;
   &__first{
     position: absolute;
-    top:-90px;
+    top:-110px;
     left:375px;
     padding-top:20px;
     display: flex;
