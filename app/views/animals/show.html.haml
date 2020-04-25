@@ -55,10 +55,13 @@
     .animals_main-btn  
       .animals_main-btn__form
         .animals_main-btn__form__submit
-          -if @animals.buyer_id.present?
-            CLOSE
+          -if user_signed_in? 
+            -if @animals.buyer_id.present?
+              CLOSE
+            -else
+              = link_to "応募する", new_animal_contact_path(params[:id]), class: 'btn btn-default'
           -else
-            = link_to "応募する", new_animal_contact_path(params[:id]), class: 'btn btn-default'
+            = link_to "ログイン", new_user_session_path, class: 'btn btn-default'
         .animals_main-btn__form__submit
           %button{type: "button", onclick: "history.back()",class: 'animals_main-btn__form__submit__bottom-btn back'} もどる
 
