@@ -295,20 +295,25 @@
       display: flex;
       justify-content: center;
       &-content{
-        background-color: white;
         margin: 0 20px;
-        .sixth_name{
-        text-align: center;
-        color: black;
-        font-family: "Nico Moji";
-        font-size: 20px;
-        font-weight: bold;
-        }
-        
-        .sixth_image{
-          height: 250px;
-          width: 300px;
-          background-color:blue;
+        padding: 10px;
+        background-color: rgb(191, 228, 250);
+        border-radius: 10px;
+        &-main{
+          background-color: white;
+          .sixth_name{
+          text-align: center;
+          color: black;
+          font-family: "Nico Moji";
+          font-size: 20px;
+          font-weight: bold;
+          }
+          
+          .sixth_image{
+            height: 200px;
+            width: 300px;
+            background-color:blue;
+          }
         }
       }
     }
