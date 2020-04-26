@@ -45,11 +45,12 @@ RELIEF
 
 ![life4](https://user-images.githubusercontent.com/60633085/80318206-65c7ca00-8843-11ea-885e-e09a54f97267.jpg)
 
-<img width="1437" alt="dc300b1c28b7aafd2db4f7040e18c64c" src="https://user-images.githubusercontent.com/60612010/80188664-76621f80-864c-11ea-8799-3010a04b4ef7.png">
+<img width="1440" alt="life5" src="https://user-images.githubusercontent.com/60633085/80318266-f1d9f180-8843-11ea-8620-249cefaeb661.png">
 
 2. 応募の手順
 - 必要項目を入力して申し込むをクリックすると応募完了です
-<img width="1440" alt="79fe8294fe4d986123063e694e666081" src="https://user-images.githubusercontent.com/60612010/80188989-ebcdf000-864c-11ea-9c40-ded05f01bf36.png">
+
+<img width="1440" alt="life6" src="https://user-images.githubusercontent.com/60633085/80318300-2e0d5200-8844-11ea-8bf2-f620de470338.png">
 
 3. マイページで行えることは主に3つです。
 - ユーザー情報の確認・編集
@@ -60,16 +61,19 @@ RELIEF
 <br>
 
 - ユーザ情報
-<img width="1440" alt="e9e0bd3ddf53a17c4566d6dad5958011" src="https://user-images.githubusercontent.com/60612010/80200760-14121a80-865e-11ea-9271-4c5a55cf28e4.png">
+
+<img width="1438" alt="life7" src="https://user-images.githubusercontent.com/60633085/80318333-66ad2b80-8844-11ea-805f-84fb02cc9ae1.png">
 
 - チェックリスト
 ※それぞれクリックすると詳細に移動します。
-![8a898d1befef6c7509a88455f4e5f8ea](https://user-images.githubusercontent.com/60612010/80191545-d22ea780-8650-11ea-9565-d8fe6157f060.jpg)
+
+![life8](https://user-images.githubusercontent.com/60633085/80318362-a07e3200-8844-11ea-9120-c7387225d242.jpg)
 <br>
 
 - レビュー（記録）
 ※レビューに表示される動物は応募した動物のみとなります。投稿するをクリックすると入力フォーム画面に移動します。
-<img width="1439" alt="1d14c6cb728e720f951ea532213b6f1e" src="https://user-images.githubusercontent.com/60612010/80189651-f76de680-864d-11ea-9c57-8bd17b61340d.png">
+
+<img width="1440" alt="life9" src="https://user-images.githubusercontent.com/60633085/80318419-f5ba4380-8844-11ea-8f4e-042b91fa44e7.png">
 
 
 
