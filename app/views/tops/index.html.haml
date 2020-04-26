@@ -135,13 +135,14 @@
       Owner Posts
     .mains__sixth--contents
       -@review.each do |review|
-        = link_to review_path(review) do
-          .mains__sixth--contents-content
-            .sixth_name
-              名前：
-              = review.name
-            .sixth_image
-              = image_tag review.image.url,height: '100%', width: '100%'
+        .mains__sixth--contents-content
+          = link_to review_path(review) do
+            .mains__sixth--contents-content-main
+              .sixth_name
+                名前：
+                = review.name
+              .sixth_image
+                = image_tag review.image.url,height: '100%', width: '100%'
           
 =render 'shared/fotter'
  

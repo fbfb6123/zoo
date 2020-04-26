@@ -33,7 +33,8 @@ RELIEF
  
 1. トップページ
 - 未ログイン時ではトップページの閲覧のみ可能。詳細の閲覧、応募やお気に入り機能を使用したい場合には、右上のマイページ（ログイン中のためマイページ表示）になっておりますが、未ログイン時は新規作成に切り替わるのでそちらからアカウントを作成する手順になります。
-![bc5ccf6c0978f039cb43116ff9862b08](https://user-images.githubusercontent.com/60612010/80186530-14ec8180-8649-11ea-9d43-fd750f9950ab.jpg)
+![life](https://user-images.githubusercontent.com/60633085/80317720-6c087700-8840-11ea-9aab-76a4ad22f152.jpg)
+
 ![RELIEF](https://user-images.githubusercontent.com/60612010/80186909-bbd11d80-8649-11ea-8364-094729d4e92e.jpg)
 
 
