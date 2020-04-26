@@ -45,7 +45,7 @@ RELIEF
 
 ![life4](https://user-images.githubusercontent.com/60633085/80318206-65c7ca00-8843-11ea-885e-e09a54f97267.jpg)
 
-<img width="1440" alt="life5" src="https://user-images.githubusercontent.com/60633085/80318266-f1d9f180-8843-11ea-8620-249cefaeb661.png">
+<img width="1440" alt="life10" src="https://user-images.githubusercontent.com/60633085/80318470-52b5f980-8845-11ea-9b84-44243a0f3e3d.png">
 
 2. 応募の手順
 - 必要項目を入力して申し込むをクリックすると応募完了です
