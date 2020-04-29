@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: zoo_production
-  username: zoo
-  password: <%= ENV['ZOO_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
