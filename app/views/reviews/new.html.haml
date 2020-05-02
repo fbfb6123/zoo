@@ -12,6 +12,10 @@
 
     .review_main-right
       = form_for [@animal, @review] do |f|
+        - if @review.errors.any?
+          - @review.errors.full_messages.each do |message| 
+            %p.messages
+              = message
         .review_main-right2
           名前
           = f.text_field :name, class: 'form__message'

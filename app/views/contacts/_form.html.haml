@@ -4,11 +4,9 @@
     応募申し込み
   = form_for [@animal, @contact] do |f|
     - if @contact.errors.any?
-      #error_explanation
-        %h2= "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"
-        %ul
-          - @contact.errors.full_messages.each do |message|
-            %li= message
+      - @contact.errors.full_messages.each do |message| 
+        %p.messages
+          = message
 
     .field
       = f.label :名前（フルネーム）
