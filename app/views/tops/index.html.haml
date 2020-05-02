@@ -42,6 +42,7 @@
   .main__second
     .main__second--name
       new animals
+      .main__second--name_bar
     .main__second--contents
       - @animal.each do |animal|
         -if animal.buyer_id.present?
@@ -67,6 +68,7 @@
   .main__third
     .main__third--name
       Dogs
+      .main__third--name_bar
     .main__third--contents
       - @dog.each do |dog|
         -if dog.buyer_id.present?
@@ -92,6 +94,7 @@
   .main__fourth
     .main__fourth--name
       Cats
+      .main__fourth--name_bar
     .main__fourth--contents
       - @cat.each do |cat|
         -if cat.buyer_id.present?
@@ -118,6 +121,7 @@
   .mains__fifth
     .mains__fifth--name
       Events
+      .mains__fifth--name_bar
     .mains__fifth--contents
       -@event.each do |event|
         = link_to "#" do
@@ -133,6 +137,7 @@
   .mains__sixth
     .mains__sixth--name
       Owner Posts
+      .mains__sixth--name_bar
     .mains__sixth--contents
       -@review.each do |review|
         .mains__sixth--contents-content
