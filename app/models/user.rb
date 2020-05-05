@@ -14,10 +14,10 @@ class User < ApplicationRecord
   has_many :favorited_animals, through: :favorites, source: :animal
   has_many :animals, dependent: :destroy
 
-  validates :name, presence: true, uniqueness: true
-  validates :name_kana, presence: true, uniqueness: true
+  validates :name, presence: true
+  validates :name_kana, presence: true
   validates :phone_number, presence: true, uniqueness: true
-  validates :city, presence: true, uniqueness: true
+  validates :city, presence: true
   validates :city_adress, presence: true, uniqueness: true
   validates :birthday, presence: true, uniqueness: true
   def already_liked?(facility)
