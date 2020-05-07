@@ -34,9 +34,10 @@ RELIEF
 1. トップページ
 - 未ログイン時ではお気に入り機能、応募フォーム機能が利用できません。利用したい場合には、右上のマイページ（ログイン中のためマイページ表示）になっておりますが、未ログイン時は新規作成に切り替わるのでそちらからアカウントを作成する手順になります。
 
-![life](https://user-images.githubusercontent.com/60633085/80317720-6c087700-8840-11ea-9aab-76a4ad22f152.jpg)
+![05cdbc9acb5b6bcf8b1dc9ed60632036](https://user-images.githubusercontent.com/60612010/81340916-946b5d80-90eb-11ea-8f5b-50435812ad77.jpg)
 
-![life2](https://user-images.githubusercontent.com/60633085/80317970-e71e5d00-8841-11ea-86a9-e009df286531.jpg)
+![2cf041495d24653a95c1a524cfe7cdd4](https://user-images.githubusercontent.com/60612010/81340992-c4b2fc00-90eb-11ea-8d5e-550d2da672f3.jpg)
+
 
 2. 施設検索画面
 - 施設検索画面では、上段で都道府県に属す施設の検索、中段では施設名を直接入力してからの検索、下段には全ての施設が記載されてます。検索結果をクリックすると施設の一覧画面へ転移することが可能です。
