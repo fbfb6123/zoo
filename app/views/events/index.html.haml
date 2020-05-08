@@ -38,17 +38,6 @@
                 .first_area
                   場所：
                   = dog3.place
-          -if dog4.present?
-            .eventmains-content
-              = link_to "#" do
-                .first_image
-                  = image_tag dog4.image,height: '130px', width: '300px'
-                .first_name
-                  名前：
-                  = dog4.name
-                .first_area
-                  場所：
-                  = dog4.place
 
   .eventmain__second
     = will_paginate @event, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
