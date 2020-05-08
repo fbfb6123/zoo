@@ -82,6 +82,12 @@ RELIEF
 <img width="1440" alt="life9" src="https://user-images.githubusercontent.com/60633085/80318419-f5ba4380-8844-11ea-8f4e-042b91fa44e7.png">
 
 
+## 接続先情報
+- URL http://52.68.192.250/
+- テスト用アカウント
+- メールアドレス: xxx@xxx.com
+- パスワード: aaaa1111
+
 
 
 
