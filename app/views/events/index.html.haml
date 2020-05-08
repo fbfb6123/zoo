@@ -4,7 +4,7 @@
     .eventmain__first--name
       Ivents一覧
     .eventmain__first--contents
-      - @event.each_slice(3) do |dog1,dog2,dog3,dog4|
+      - @event.each_slice(4) do |dog1,dog2,dog3,dog4|
         .eventmains
           .eventmains-content
             = link_to "#" do
@@ -38,6 +38,17 @@
                 .first_area
                   場所：
                   = dog3.place
+          -if dog4.present?
+            .eventmains-content
+              = link_to "#" do
+                .first_image
+                  = image_tag dog4.image,height: '130px', width: '300px'
+                .first_name
+                  名前：
+                  = dog4.name
+                .first_area
+                  場所：
+                  = dog4.place
 
   .eventmain__second
     = will_paginate @event, :previous_label => ' &lt 前へ', :next_label => '次へ &gt'
