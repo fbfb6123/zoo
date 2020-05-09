@@ -44,11 +44,12 @@ padding-bottom: 60px;
 
 .actions{
 display: flex;
+border-radius: 20px;
 }
 
 .contact_save{
   width: 130px;
-  height: 80px;
+  height: 70px;
   text-align: center;
   border-radius: 4%;
   margin-top: 50px;
@@ -61,10 +62,10 @@ display: flex;
   margin-left: 40px;
   margin-top: 50px;
   width: 130px;
-  height: 80px;
+  height: 70px;
   text-align: center;
   display: block;
-  line-height: 80px;
+  line-height: 70px;
   color: #0f0f0f;
   .a{
   }
