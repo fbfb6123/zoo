@@ -44,29 +44,29 @@ padding-bottom: 60px;
 
 .actions{
 display: flex;
-border-radius: 20px;
 }
 
 .contact_save{
   width: 130px;
-  height: 70px;
+  height: 75px;
   text-align: center;
-  border-radius: 4%;
   margin-top: 50px;
   font-size: 20px;
-  background-color: #0aa7f0;}
+  background-color: #0aa7f0;
+  border-radius: 10px;
+}
 .contact_back{
   background-color: #ccc;
-  border-radius: 4%;
   font-size: 20px;
   margin-left: 40px;
   margin-top: 50px;
   width: 130px;
-  height: 70px;
+  height: 75px;
   text-align: center;
   display: block;
-  line-height: 70px;
+  line-height: 75px;
   color: #0f0f0f;
+  border-radius: 10px;
   .a{
   }
 }
