@@ -94,18 +94,18 @@ RELIEF
 
 <img width="1438" alt="life7" src="https://user-images.githubusercontent.com/60633085/80318333-66ad2b80-8844-11ea-805f-84fb02cc9ae1.png">
 
-- チェックリスト
-※それぞれクリックすると詳細に移動します。
+- チェックリスト<br>
+※それぞれ動物をクリックすると詳細画面に移動します。
 
 ![life8](https://user-images.githubusercontent.com/60633085/80318362-a07e3200-8844-11ea-9120-c7387225d242.jpg)
 <br>
 
-- レビュー（記録）
+- レビュー（記録）<br>
 ※レビューに表示される動物は応募した動物のみとなります。投稿するをクリックすると入力フォーム画面に移動します。
 
 <img width="1440" alt="life9" src="https://user-images.githubusercontent.com/60633085/80318419-f5ba4380-8844-11ea-8f4e-042b91fa44e7.png">
 
-- レビュー入力フォームとなります。
+- レビュー入力フォームとなります。<br>
 こちらのフォームはAction Mailerを使用しました。
 <img width="1440" alt="b40814a7a07f87fc72f171eb65406c88" src="https://user-images.githubusercontent.com/60612010/81600152-1d440b00-9404-11ea-9221-f52f6351d03e.png">
 
