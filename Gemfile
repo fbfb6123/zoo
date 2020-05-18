@@ -73,3 +73,4 @@ gem 'bootstrap-will_paginate'
 gem 'ransack'
 gem 'carrierwave'
 gem 'mini_magick'
+gem "gretel"
