@@ -3,6 +3,7 @@
     =link_to root_path do
       = image_tag 'header.png', height: '50', width: '70', class: 'image1'
       RELIEF
+      - breadcrumb :mypage
   .header__right
     -if user_signed_in? 
       .header__right--left
