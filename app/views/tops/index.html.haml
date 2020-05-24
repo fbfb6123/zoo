@@ -4,6 +4,7 @@
       = image_tag 'header.png', height: '50', width: '70', class: 'image1'
       RELIEF
       - breadcrumb :mypage
+      = breadcrumbs pretext: "You are here:",separator: " &rsaquo; "
   .header__right
     -if user_signed_in? 
       .header__right--left

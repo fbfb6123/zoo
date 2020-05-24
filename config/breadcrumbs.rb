@@ -4,7 +4,7 @@ end
 
 # マイページ
 crumb :mypage do
-  link "マイページ", mypage_users_path
+  link "マイページ", root_path
 end
 
 # crumb :projects do
