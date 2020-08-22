@@ -32,3 +32,4 @@ class AnimalsController < ApplicationController
     params.require(:animal).permit(:name,:species, :type,:gender,:age,:image1,:image2,:image3,:text)
   end
 end
+
