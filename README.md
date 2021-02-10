@@ -12,12 +12,6 @@ RELIEF
 ## アプリケーション概要
 保健所施設からの動物（犬、猫）の引き取り、引き取った動物のレビュー投稿を行えるアプリ
 
-## 接続先情報
-- URL http://13.230.142.52/
-
-## テスト用アカウント
-- メールアドレス: xxx@xxx.com
-- パスワード: aaaa1111
 
 ## 開発環境
  
@@ -56,7 +50,6 @@ RELIEF
 
 2. 犬・猫一覧
 - 現在、里親を募集している動物が全て表示されます。
-![1a992c8dd5b74ef7773c4c23f9b474e1](https://user-images.githubusercontent.com/60612010/81610191-12917200-9414-11ea-9c51-178fd60f3ffd.jpg)
 ![e67c60fa73017faaa5303e4ea5465324](https://user-images.githubusercontent.com/60612010/81610329-49678800-9414-11ea-834d-96a6e78a73b6.jpg)
 
 
@@ -99,19 +92,6 @@ RELIEF
 
 ![life8](https://user-images.githubusercontent.com/60633085/80318362-a07e3200-8844-11ea-9120-c7387225d242.jpg)
 <br>
-
-- レビュー（記録）<br>
-※レビューに表示される動物は応募した動物のみとなります。投稿するをクリックすると入力フォーム画面に移動します。
-
-<img width="1440" alt="life9" src="https://user-images.githubusercontent.com/60633085/80318419-f5ba4380-8844-11ea-8f4e-042b91fa44e7.png">
-
-- レビュー入力フォームとなります。<br>
-こちらのフォームはAction Mailerを使用しました。
-<img width="1440" alt="b40814a7a07f87fc72f171eb65406c88" src="https://user-images.githubusercontent.com/60612010/81600152-1d440b00-9404-11ea-9221-f52f6351d03e.png">
-
-
-
-
 
 ## movere DB設計
 
